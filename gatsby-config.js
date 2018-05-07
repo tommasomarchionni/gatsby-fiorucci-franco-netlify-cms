@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Fiorucci Franco',
+    author: "Tommaso Marchionni",
+    description: "Fiorucci Franco website."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
