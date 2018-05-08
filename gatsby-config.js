@@ -4,6 +4,7 @@ module.exports = {
     author: "Tommaso Marchionni",
     description: "Fiorucci Franco website."
   },
+  pathPrefix: '/',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

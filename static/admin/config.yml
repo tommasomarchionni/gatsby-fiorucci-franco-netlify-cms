@@ -24,7 +24,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "theme-page"}
       - {label: "Titolo", name: "title", widget: "string"}
       - {label: "Sottotitolo", name: "subtitle", widget: "string"}
       - {label: "Immagine iniziale", name: "intro_image", widget: "image"}

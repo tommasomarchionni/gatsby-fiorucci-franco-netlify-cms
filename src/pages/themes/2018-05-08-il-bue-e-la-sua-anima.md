@@ -1,5 +1,5 @@
 ---
-templateKey: theme
+templateKey: theme-page
 title: il bue e la sua anima
 subtitle: grande maternità
 intro_image: /img/chemex.jpg

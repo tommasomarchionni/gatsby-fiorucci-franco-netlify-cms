@@ -5,34 +5,34 @@ import Link from 'gatsby-link'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { edges: themes } = data.allMarkdownRemark
 
     return (
       <section className="section">
         <div className="container">
           <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+            <h1 className="has-text-weight-bold is-size-2">Latest Themes</h1>
           </div>
-          {posts
-            .filter(post => post.node.frontmatter.templateKey === 'blog-post')
-            .map(({ node: post }) => (
+          {themes
+            .filter(theme => theme.node.frontmatter.templateKey === 'theme-page')
+            .map(({ node: theme }) => (
               <div
                 className="content"
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                key={post.id}
+                key={theme.id}
               >
                 <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
+                  <Link className="has-text-primary" to={theme.fields.slug}>
+                    {theme.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
+                  <small>{theme.frontmatter.date}</small>
                 </p>
                 <p>
-                  {post.excerpt}
+                  {theme.excerpt}
                   <br />
                   <br />
-                  <Link className="button is-small" to={post.fields.slug}>
+                  <Link className="button is-small" to={theme.fields.slug}>
                     Keep Reading →
                   </Link>
                 </p>
