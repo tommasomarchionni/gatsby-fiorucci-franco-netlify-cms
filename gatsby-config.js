@@ -25,10 +25,18 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [],
-      },
+        resolve: `gatsby-transformer-remark`,
+        options: {
+            plugins: [
+                {
+                    resolve: `gatsby-remark-images`,
+                    options: {
+                        maxWidth: 630,
+                    },
+                },
+                "gatsby-remark-copy-linked-files",
+            ],
+        },
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',
