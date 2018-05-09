@@ -1,18 +1,82 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import Contact from '../components/Contact'
 
-import './all.sass'
+import './scss/main.scss'
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet title="Home | Fiorucci Franco" />
-    <div>{children()}</div>
-  </div>
-)
+class TemplateWrapper extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            isMenuVisible: false,
+            loading: 'is-loading'
+        }
+        this.handleToggleMenu = this.handleToggleMenu.bind(this)
+    }
+
+    componentDidMount () {
+        this.timeoutId = setTimeout(() => {
+            this.setState({loading: ''});
+        }, 100);
+    }
+
+    componentWillUnmount () {
+        if (this.timeoutId) {
+            clearTimeout(this.timeoutId);
+        }
+    }
+
+    handleToggleMenu() {
+        this.setState({
+            isMenuVisible: !this.state.isMenuVisible
+        })
+    }
+
+    render() {
+        const { children } = this.props
+        const siteTitle = this.props.data.site.siteMetadata.title
+        const siteDescription = this.props.data.site.siteMetadata.description
+        return (
+            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
+                <Helmet>
+                    <title>{siteTitle}</title>
+                    <meta name="description" content={siteDescription} />
+                </Helmet>
+                <div id="wrapper">
+                    {/*<Header onToggleMenu={this.handleToggleMenu} />*/}
+                    {children()}
+                    <Contact />
+                    {/*<Footer />*/}
+                </div>
+                {/*<Menu onToggleMenu={this.handleToggleMenu} />*/}
+            </div>
+        )
+    }
+}
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+    children: PropTypes.func,
+    data: PropTypes.shape({
+        site: PropTypes.shape({
+            siteMetadata: PropTypes.shape({
+                title: PropTypes.string,
+                description: PropTypes.string
+            })
+        })
+    })
 }
 
 export default TemplateWrapper
+
+export const pageQuery = graphql`
+    query PageQuery {
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+    }
+`

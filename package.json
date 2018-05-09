@@ -4,6 +4,7 @@
   "version": "1.1.2",
   "author": "Austin Green",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.7",
     "bulma": "^0.6.0",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",

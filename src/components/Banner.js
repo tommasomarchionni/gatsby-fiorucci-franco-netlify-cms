@@ -7,7 +7,13 @@ const Banner = (props) => (
                 <h1>Fiorucci Franco</h1>
             </header>
             <div className="content">
-                <p>Presentazione critica.</p>
+                <p>Presentazione critica</p>
+                <ul className="actions">
+                    <li><a href="#one" className="button next scrolly">Visualizza</a></li>
+                </ul>
+            </div>
+            <div className="content">
+                <p>Antologia critica</p>
                 <ul className="actions">
                     <li><a href="#one" className="button next scrolly">Visualizza</a></li>
                 </ul>
