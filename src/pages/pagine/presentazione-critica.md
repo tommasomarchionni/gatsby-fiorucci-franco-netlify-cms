@@ -1,6 +1,6 @@
 ---
-templateKey: 'generic-page'
-path: /presentazione-critica
+templateKey: generic-page
+orderIndex: 1
 title: Presentazione critica
 ---
 ### Shade-grown coffee
