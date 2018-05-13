@@ -1,6 +1,6 @@
 ---
-templateKey: 'generic-page'
-path: /antologia-critica
+templateKey: generic-page
+orderIndex: 2
 title: Antologia critica
 ---
 ### Shade-grown coffee
