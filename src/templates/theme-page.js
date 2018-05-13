@@ -14,13 +14,14 @@ export const ThemePageTemplate = ({
   contentComponent,
   description,
   title,
+  subtitle,
   helmet,
 }) => {
   const ThemeContent = contentComponent || Content
 
   return (
       <div>
-          <BannerLanding title={title}/>
+          <BannerLanding title={title} subtitle={subtitle}/>
 
           <div id="main">
               <section id="two" className="spotlights">
@@ -83,20 +84,21 @@ ThemePageTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  helmet: PropTypes.instanceOf(Object),
 }
 
 const ThemePage = ({ data }) => {
   const { markdownRemark: theme } = data
-
   return (
     <ThemePageTemplate
       content={theme.html}
       contentComponent={HTMLContent}
       description={theme.frontmatter.description}
-      helmet={<Helmet title={`${theme.frontmatter.title} | Blog`} />}
+      helmet={<Helmet title={`${theme.frontmatter.title}`} />}
       title={theme.frontmatter.title}
+      subtitle={theme.frontmatter.subtitle}
     />
   )
 }
@@ -115,8 +117,8 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
+        subtitle
         description
       }
     }
