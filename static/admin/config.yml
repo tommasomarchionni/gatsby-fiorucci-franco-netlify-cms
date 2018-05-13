@@ -29,7 +29,6 @@ collections:
       - {label: "Titolo", name: "title", widget: "string"}
       - {label: "Sottotitolo", name: "subtitle", widget: "string"}
       - {label: "Immagine iniziale", name: "intro_image", widget: "image"}
-      - {label: "Data pubblicazione", name: "date", widget: "datetime"}
 
   - name: "pages"
     label: "Pagine"
