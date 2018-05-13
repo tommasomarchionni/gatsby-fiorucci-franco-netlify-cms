@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.2",
-  "author": "Austin Green",
+  "name": "gatsby-fiorucci-franco-netlify-cms",
+  "description": "Fiorucci Franco Website developed with Gatsby, and Netlify CMS",
+  "version": "1.0",
+  "author": "Tommaso MArchionni",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.7",
     "bulma": "^0.6.0",
