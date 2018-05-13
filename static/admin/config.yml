@@ -37,6 +37,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "generic-page"}
+      - {label: "Posizione", name: "orderIndex", widget: "number", default: 1, valueType: "int", min: 1}
       - {label: "Titolo", name: "title", widget: "string"}
       - {label: "Corpo", name: "body", widget: "markdown"}
 
