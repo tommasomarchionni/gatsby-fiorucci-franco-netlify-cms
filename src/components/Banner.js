@@ -1,25 +1,41 @@
 import React from 'react'
+import Link from 'gatsby-link'
+import PropTypes from "prop-types";
 
-const Banner = (props) => (
+const Banner = ({pages}) => (
     <section id="banner" className="major">
         <div className="inner">
             <header className="major">
                 <h1>Fiorucci Franco</h1>
             </header>
-            <div className="content">
-                <p>Presentazione critica</p>
-                <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">Visualizza</a></li>
-                </ul>
-            </div>
-            <div className="content">
-                <p>Antologia critica</p>
-                <ul className="actions">
-                    <li><a href="#one" className="button next scrolly">Visualizza</a></li>
-                </ul>
-            </div>
+            {pages.map(({ node: page }) => (
+                <div key={page.id} className="content">
+                    <p>{page.frontmatter.title}</p>
+                    <ul className="actions">
+                        <li><Link className="button next scrolly" to={page.fields.slug}>Visualizza</Link></li>
+                    </ul>
+                </div>
+            ))}
         </div>
     </section>
 )
+
+Banner.propTypes = {
+    pages: PropTypes.arrayOf(
+        PropTypes.shape({
+            excerpt: PropTypes.string,
+            id: PropTypes.string,
+            fields: PropTypes.shape({
+                slug: PropTypes.string,
+            }),
+            frontmatter: PropTypes.shape({
+                intro_image: PropTypes.string,
+                subtitle: PropTypes.string,
+                templateKey: PropTypes.string,
+                title: PropTypes.string,
+            }),
+        }),
+    )
+}
 
 export default Banner

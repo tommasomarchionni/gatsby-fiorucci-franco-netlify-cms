@@ -3,6 +3,11 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
+import Link from 'gatsby-link'
+import BannerLanding from '../components/BannerLanding'
+import pic08 from '../img/pic08.jpg'
+import pic09 from '../img/pic09.jpg'
+import pic10 from '../img/pic10.jpg'
 
 export const ThemePageTemplate = ({
   content,
@@ -14,20 +19,63 @@ export const ThemePageTemplate = ({
   const ThemeContent = contentComponent || Content
 
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <ThemeContent content={content} />
+      <div>
+          <BannerLanding title={title}/>
+
+          <div id="main">
+              <section id="two" className="spotlights">
+                  <section>
+                      <Link to="/generic" className="image">
+                          <img src={pic08} alt="" />
+                      </Link>
+                      <div className="content">
+                          <div className="inner">
+                              <header className="major">
+                                  <h3>Orci maecenas</h3>
+                              </header>
+                              <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+                              <ul className="actions">
+                                  <li><Link to="/generic" className="button">Learn more</Link></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </section>
+                  <section>
+                      <Link to="/generic" className="image">
+                          <img src={pic09} alt="" />
+                      </Link>
+                      <div className="content">
+                          <div className="inner">
+                              <header className="major">
+                                  <h3>Rhoncus magna</h3>
+                              </header>
+                              <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+                              <ul className="actions">
+                                  <li><Link to="/generic" className="button">Learn more</Link></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </section>
+                  <section>
+                      <Link to="/generic" className="image">
+                          <img src={pic10} alt="" />
+                      </Link>
+                      <div className="content">
+                          <div className="inner">
+                              <header className="major">
+                                  <h3>Sed nunc ligula</h3>
+                              </header>
+                              <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+                              <ul className="actions">
+                                  <li><Link to="/generic" className="button">Learn more</Link></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </section>
+              </section>
           </div>
-        </div>
+
       </div>
-    </section>
   )
 }
 
