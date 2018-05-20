@@ -43,5 +43,10 @@ works:
       60 x 50 cm
     image: /img/il-bue-e-la-sua-anima_contemplazione.jpg
     title: Contemplazione
+  - description: |-
+      pastello (1966)\
+      50 x 40 cm
+    image: /img/il-bue-e-la-sua-anima_la-sfogliatura.jpg
+    title: La sfogliatura
 ---
 
