@@ -6,12 +6,13 @@ subtitle: grande maternità
 intro_image: /img/chemex.jpg
 works:
   - image: /img/il-bue-e-la-sua-anima_due-masse.png
-    title: Due masse
+    title: Due masse (to fix)
     subtitle: disegno (1965) 50 x 45 cm
-  - image: /img/coffee.png
-    title: opera 2
-    subtitle: opera sottotitolo
-  - image: /img/meeting-space.png
-    title: opera 3
+  - image: /img/il-bue-e-la-sua-anima_due-strutture.png
+    title: Due strutture (to fix)
+    subtitle: disegno (1966) 60 x 50 cm
+  - image: /img/il-bue-e-la-sua-anima_la-monta.jpg
+    title: La monta
+    subtitle: disegno (1966) 45 x 70 cm
 ---
 
