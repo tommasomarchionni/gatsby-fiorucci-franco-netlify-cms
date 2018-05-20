@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Banner from '../components/Banner'
 import Theme from '../components/Theme'
+import Contact from "../components/Contact";
 
 export default class IndexPage extends React.Component {
   render() {
@@ -26,6 +27,14 @@ export default class IndexPage extends React.Component {
                                 key={theme.id} />
                     ))}
                 </section>
+                {pages
+                    .filter(theme => theme.node.frontmatter.templateKey === 'contact-page')
+                    .map(({ node: theme }) => (
+                        <Contact
+                            email={theme.frontmatter.email}
+                            telephone={theme.frontmatter.telephone}
+                            address={theme.frontmatter.address} />
+                    ))}
             </div>
         </div>
     )
@@ -52,6 +61,9 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            email
+            telephone
+            address
             intro_image
             templateKey
             subtitle

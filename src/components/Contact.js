@@ -1,6 +1,11 @@
 import React from 'react'
+import PropTypes from "prop-types";
 
-const Contact = (props) => (
+const Contact = ({
+    email,
+    telephone,
+    address,
+}) => (
     <section id="contact">
         <hr/>
         <div className="inner">
@@ -29,28 +34,32 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-envelope"></span>
                         <h3>Email</h3>
-                        <a href="#">information@untitled.tld</a>
+                        <a href="#">{email}</a>
                     </div>
                 </section>
                 <section>
                     <div className="contact-method">
                         <span className="icon alt fa-phone"></span>
                         <h3>Telefono</h3>
-                        <span>(+39) 000-0000 x12387</span>
+                        <span>{telephone}</span>
                     </div>
                 </section>
                 <section>
                     <div className="contact-method">
                         <span className="icon alt fa-home"></span>
                         <h3>Indirizzo</h3>
-                        <span>1234 Somewhere Road #5432<br />
-                        Nashville, TN 00000<br />
-                        United States of America</span>
+                        {address}
                     </div>
                 </section>
             </section>
         </div>
     </section>
 )
+
+Contact.propTypes = {
+    email: PropTypes.string.isRequired,
+    telephone: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+}
 
 export default Contact

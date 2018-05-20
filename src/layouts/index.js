@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Contact from '../components/Contact'
 
 import './scss/main.scss'
 
@@ -47,8 +46,6 @@ class TemplateWrapper extends React.Component {
                 <div id="wrapper">
                     {/*<Header onToggleMenu={this.handleToggleMenu} />*/}
                     {children()}
-                    <Contact />
-                    {/*<Footer />*/}
                 </div>
                 {/*<Menu onToggleMenu={this.handleToggleMenu} />*/}
             </div>
