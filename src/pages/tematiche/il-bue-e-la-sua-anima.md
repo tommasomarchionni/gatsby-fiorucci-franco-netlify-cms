@@ -28,5 +28,20 @@ works:
       55 x 45 cm
     image: /img/il-bue-e-la-sua-anima_maternita.jpg
     title: Maternità
+  - description: |-
+      disegno (1966)\
+      60 x 45 cm
+    image: /img/il-bue-e-la-sua-anima_allattamento.jpg
+    title: Allattamento
+  - description: |-
+      Disegno, 1966\
+      Cm. 50 x 60
+    image: /img/il-bue-e-la-sua-anima_quelli-che-sono-delle-stalle.jpg
+    title: Quelli che sono delle stalle
+  - description: |-
+      disegno (1966)\
+      60 x 50 cm
+    image: /img/il-bue-e-la-sua-anima_contemplazione.jpg
+    title: Contemplazione
 ---
 
