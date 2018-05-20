@@ -1,8 +1,10 @@
 ---
 templateKey: theme-page
+orderIndex: 2
 title: gli affetti
-subtitle:
 intro_image: /img/chemex.jpg
-date: '2018-05-09T00:00:16+02:00'
+works:
+  - image: /img/jumbotron.jpg
+    title: opera 1
 ---
 
