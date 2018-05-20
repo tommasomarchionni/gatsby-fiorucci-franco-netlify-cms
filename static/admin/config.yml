@@ -49,7 +49,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Telefono", name: "telephone", widget: "string"}
-          - {label: "Indirizzo", name: "body", widget: "text"}
+          - {label: "Indirizzo", name: "address", widget: "text"}
 #      - file: "src/pages/antologia-critica/index.md"
 #        label: "Antologia Critica"
 #        name: "critical-anthology"
