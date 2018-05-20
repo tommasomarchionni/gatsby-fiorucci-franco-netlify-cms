@@ -20,5 +20,13 @@ works:
       45 x 70 cm
     image: /img/il-bue-e-la-sua-anima_la-monta.jpg
     title: La monta
+  - description: litografie (1973)
+    image: /img/il-bue-e-la-sua-anima_tre-strutture-di-buoi.jpg
+    title: Tre strutture di buoi
+  - description: |-
+      disegno (1973)\
+      55 x 45 cm
+    image: /img/il-bue-e-la-sua-anima_maternita.jpg
+    title: Maternità
 ---
 
