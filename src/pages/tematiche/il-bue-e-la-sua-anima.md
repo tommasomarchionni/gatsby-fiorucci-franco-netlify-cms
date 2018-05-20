@@ -48,5 +48,7 @@ works:
       50 x 40 cm
     image: /img/il-bue-e-la-sua-anima_la-sfogliatura.jpg
     title: La sfogliatura
+  - image: /img/il-bue-e-la-sua-anima_ritorno-alle-stalle.jpg
+    title: Ritorno alle stalle
 ---
 
