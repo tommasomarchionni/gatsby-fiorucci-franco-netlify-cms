@@ -4,9 +4,6 @@ import { kebabCase } from 'lodash'
 import Content, { HTMLContent } from '../components/Content'
 import Link from 'gatsby-link'
 import BannerLanding from '../components/BannerLanding'
-import pic08 from '../img/pic08.jpg'
-import pic09 from '../img/pic09.jpg'
-import pic10 from '../img/pic10.jpg'
 import Work from "../components/Work";
 import WorkList from "../components/WorkList";
 
@@ -99,7 +96,7 @@ export const pageQuery = graphql`
         works {
           image
           title
-          subtitle  
+          description  
         }
       }
     }

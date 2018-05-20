@@ -3,7 +3,7 @@ templateKey: theme-page
 orderIndex: 1
 title: il bue e la sua anima
 subtitle: grande maternità
-intro_image: /img/chemex.jpg
+intro_image: /img/il-bue-e-la-sua-anima_due-masse.jpg
 works:
   - image: /img/il-bue-e-la-sua-anima_due-masse.jpg
     title: Due masse (to fix)
