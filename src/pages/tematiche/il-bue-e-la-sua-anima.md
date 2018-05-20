@@ -50,5 +50,7 @@ works:
     title: La sfogliatura
   - image: /img/il-bue-e-la-sua-anima_ritorno-alle-stalle.jpg
     title: Ritorno alle stalle
+  - image: /img/il-bue-e-la-sua-anima-affettuosita-e-dialoghi.jpg
+    title: Affettuosità e dialoghi
 ---
 
