@@ -29,6 +29,7 @@ collections:
       - {label: "Titolo", name: "title", widget: "string"}
       - {label: "Sottotitolo", name: "subtitle", widget: "string"}
       - {label: "Immagine iniziale", name: "intro_image", widget: "image"}
+      - {label: "Opere", name: "works", widget: "list", fields: [{label: "Titolo", name: "title", widget: "string"}, {label: "Sottotitolo", name: "subtitle", widget: "string"}, {label: "Immagine", name: "image", widget: "image"}]}
 
   - name: "pages"
     label: "Pagine"
