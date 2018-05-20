@@ -8,8 +8,7 @@ works:
   - image: /img/il-bue-e-la-sua-anima_due-masse.jpg
     title: Due masse (to fix)
   - description: |-
-      prova descrizione
-
+      prova descrizione\
       **seconda** riga
     image: /img/il-bue-e-la-sua-anima_due-strutture.jpg
     title: Due strutture (to fix)

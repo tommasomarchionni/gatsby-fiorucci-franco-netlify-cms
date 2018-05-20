@@ -2,14 +2,17 @@ import React, {Fragment} from 'react'
 import PropTypes from 'prop-types'
 import { HTMLContent } from "./Content";
 import remark from 'remark';
-import recommended from 'remark-preset-lint-recommended';
+import styleGuide from 'remark-preset-lint-markdown-style-guide';
 import remarkHtml from 'remark-html';
 
 const WorkList = ({ listItems }) => {
 
     const parseMarkdown = (md) => {
         return remark()
-            .use(recommended)
+            .use({
+                settings: {commonmark: true}
+            })
+            .use(styleGuide)
             .use(remarkHtml)
             .processSync(md).toString();
     }
