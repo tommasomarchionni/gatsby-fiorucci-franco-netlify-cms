@@ -52,5 +52,12 @@ works:
     title: Ritorno alle stalle
   - image: /img/il-bue-e-la-sua-anima-affettuosita-e-dialoghi.jpg
     title: Affettuosità e dialoghi
+  - image: /img/il-bue-e-la-sua-anima_grande-maternita.jpg
+    title: Grande maternità
+  - description: |-
+      Tempera - Pastella, 1978\
+      Cm. 57 x 62
+    image: /img/il-bue-e-la-sua-anima_l-attesa.jpg
+    title: L'attesa
 ---
 
