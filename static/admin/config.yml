@@ -41,17 +41,15 @@ collections:
       - {label: "Titolo", name: "title", widget: "string"}
       - {label: "Corpo", name: "body", widget: "markdown"}
 
-
-#
-#
-#    files:
-#      - file: "src/pages/presentazione-critica/index.md"
-#        label: "Presentazione Critica"
-#        name: "critical-presentation"
-#        fields:
-#          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "generic-page"}
-#          - {label: "Titolo", name: "title", widget: "string"}
-#          - {label: "Corpo", name: "body", widget: "markdown"}
+    files:
+      - file: "src/pages/contatti/index.md"
+        label: "Contatti"
+        name: "contacts"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Telefono", name: "telephone", widget: "string"}
+          - {label: "Indirizzo", name: "body", widget: "text"}
 #      - file: "src/pages/antologia-critica/index.md"
 #        label: "Antologia Critica"
 #        name: "critical-anthology"
