@@ -1,7 +1,7 @@
 {
   "name": "gatsby-fiorucci-franco-netlify-cms",
   "description": "Fiorucci Franco Website developed with Gatsby and Netlify CMS",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "Tommaso MArchionni",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.7",
