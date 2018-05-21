@@ -64,5 +64,14 @@ works:
       Cm. 29 x 42
     image: /img/il-bue-e-la-sua-anima_il-grande-scoglio.jpg
     title: Il grande scoglio
+  - description: |-
+      Tempera, 1973\
+      Cm. 55 x 70 c.a
+    image: /img/il-bue-e-la-sua-anima_i-retable.jpg
+    title: I retable
+  - image: /img/il-bue-e-la-sua-anima_verso-le-stalle.jpg
+    title: Verso le stalle
+  - image: /img/il-bue-e-la-sua-anima_rurali.jpg
+    title: Rurali
 ---
 
