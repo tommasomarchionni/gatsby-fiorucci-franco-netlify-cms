@@ -73,5 +73,14 @@ works:
     title: Verso le stalle
   - image: /img/il-bue-e-la-sua-anima_rurali.jpg
     title: Rurali
+  - image: /img/il-bue-e-la-sua-anima_conversazioni.jpg
+    title: Conversazioni
+  - image: /img/il-bue-e-la-sua-anima_sfogliatura-di-granoturco.jpg
+    title: Sfogliatura di granoturco
+  - description: |-
+      disegno (1973)\
+      30 x 30 cm
+    image: /img/il-bue-e-la-sua-anima_in-famiglia.jpg
+    title: In famiglia
 ---
 
