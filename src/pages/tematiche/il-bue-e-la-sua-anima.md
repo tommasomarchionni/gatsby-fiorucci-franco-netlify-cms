@@ -59,5 +59,10 @@ works:
       Cm. 57 x 62
     image: /img/il-bue-e-la-sua-anima_l-attesa.jpg
     title: L'attesa
+  - description: |-
+      Olio, 1977\
+      Cm. 29 x 42
+    image: /img/il-bue-e-la-sua-anima_il-grande-scoglio.jpg
+    title: Il grande scoglio
 ---
 
