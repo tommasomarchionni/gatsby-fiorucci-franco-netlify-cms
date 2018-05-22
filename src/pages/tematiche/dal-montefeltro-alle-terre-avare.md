@@ -81,9 +81,17 @@ works:
       70 x 60 cm
     image: /img/dal-montefeltro-alle-terre-avare_sotto-il-bosco.jpg
     title: Sotto il bosco
-  - {}
-  - {}
-  - {}
+  - description: |-
+      grouche (1979)\
+      60 x 60 cm
+    image: /img/dal-montefeltro-alle-terre-avare_al-crepuscolo.jpg
+    title: Al crepuscolo
+  - description: |-
+      grouche (1979)\
+      65 x 55 cm
+    image: /img/dal-montefeltro-alle-terre-avare_verso-sera.jpg
+    title: Verso sera
+  - title: ''
   - {}
 ---
 
