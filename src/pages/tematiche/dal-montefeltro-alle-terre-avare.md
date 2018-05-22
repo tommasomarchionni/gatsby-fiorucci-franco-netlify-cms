@@ -12,5 +12,15 @@ works:
       Cm. 29 x 42
     image: /img/dal-montefeltro-alle-terre-avare_initimita.jpg
     title: Intimità
+  - description: |-
+      acquarello (1976)\
+      35 x 75 cm
+    image: /img/dal-montefeltro-alle-terre-avare_nell-aia.jpg
+    title: Nell'aia
+  - description: |-
+      Olio, 1970\
+      Cm. 21 x 31,5
+    image: /img/dal-montefeltro-alle-terre-avare_casolare.jpg
+    title: Casolare
 ---
 
