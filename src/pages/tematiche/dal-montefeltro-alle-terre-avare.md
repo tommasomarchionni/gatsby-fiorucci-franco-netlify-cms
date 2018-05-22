@@ -22,5 +22,10 @@ works:
       Cm. 21 x 31,5
     image: /img/dal-montefeltro-alle-terre-avare_casolare.jpg
     title: Casolare
+  - description: |-
+      gouche (1959)\
+      40 x 28 cm
+    image: /img/dal-montefeltro-alle-terre-avare_carrettieri.jpg
+    title: Carrettieri
 ---
 
