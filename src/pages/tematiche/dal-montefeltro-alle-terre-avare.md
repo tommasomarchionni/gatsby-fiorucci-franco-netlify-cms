@@ -91,7 +91,11 @@ works:
       65 x 55 cm
     image: /img/dal-montefeltro-alle-terre-avare_verso-sera.jpg
     title: Verso sera
-  - title: ''
-  - {}
+  - description: acquarello (1998)
+    title: Il pasto
+  - description: |-
+      gouche (1997)\
+      50 x 35 cm
+    title: Quelli delle terre crude
 ---
 
