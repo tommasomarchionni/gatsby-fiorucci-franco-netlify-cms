@@ -37,5 +37,53 @@ works:
       50 x 60 cm
     image: /img/dal-montefeltro-alle-terre-avare_la-levata.jpg
     title: La levata
+  - description: |-
+      gouche (2004)\
+      70 x 60 cm
+    image: /img/dal-montefeltro-alle-terre-avare_quelli-che-ritornano.jpg
+    title: Quelli che ritornano
+  - description: |-
+      acquarello (1967)\
+      60 x 50 cm
+    image: /img/dal-montefeltro-alle-terre-avare_nella-stalla.jpg
+    title: Nella stalla
+  - description: |-
+      gouche (1959)\
+      70 x 58 cm
+    image: /img/dal-montefeltro-alle-terre-avare_cavalli-da-tiro.jpg
+    title: Cavalli da tiro
+  - description: |-
+      tecnica mista (2004)\
+      28 x 28 cm
+    image: /img/dal-montefeltro-alle-terre-avare_quelli-delle-terre-avare.jpg
+    title: Quelli delle terre avare
+  - description: |-
+      tecnica mista (2007)\
+      35 x 28 cm
+    image: /img/dal-montefeltro-alle-terre-avare_gli-antenati-riappaiono.jpg
+    title: Gli antenati riappaiano
+  - description: |-
+      tecnica mista (1980)\
+      70 x 60 cm
+    title: Dentro la stalla
+  - description: |-
+      acquarello (1988)\
+      50 x 40 cm
+    image: /img/dal-montefeltro-alle-terre-avare_prima-alba.jpg
+    title: Prima alba
+  - description: |-
+      gouche (1999)\
+      68 x 58 cm
+    image: /img/dal-montefeltro-alle-terre-avare_verso-le-stalle.jpg
+    title: Verso le stalle
+  - description: |-
+      tecnica mista (1999)\
+      70 x 60 cm
+    image: /img/dal-montefeltro-alle-terre-avare_sotto-il-bosco.jpg
+    title: Sotto il bosco
+  - {}
+  - {}
+  - {}
+  - {}
 ---
 
