@@ -61,7 +61,7 @@ works:
     title: Deposizione
   - description: |-
       disegno (1965)\
-      70 x 60
+      70 x 60 cm
     image: /img/gli-affetti_crocifissione.jpg
     title: Crocifissione
 ---
