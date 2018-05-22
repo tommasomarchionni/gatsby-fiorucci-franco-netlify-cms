@@ -27,5 +27,15 @@ works:
       40 x 28 cm
     image: /img/dal-montefeltro-alle-terre-avare_carrettieri.jpg
     title: Carrettieri
+  - description: |-
+      tempera (1992)\
+      80 x 60 cm
+    image: /img/dal-montefeltro-alle-terre-avare_il-ritorno.jpg
+    title: Il ritorno
+  - description: |-
+      tecnica mista (1973)\
+      50 x 60 cm
+    image: /img/dal-montefeltro-alle-terre-avare_la-levata.jpg
+    title: La levata
 ---
 
