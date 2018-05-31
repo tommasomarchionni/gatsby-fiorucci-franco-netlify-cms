@@ -31,7 +31,7 @@ Negli incisori del Novecento c'è una particolare disposizione all'acquarello (e
 
 C’è una conseguenzialità e forse complementarietà. Non saprei dire perché Fiorucci ad un certo momento ha trasportato il disegno e l’acquaforte nell’acquerello: quello che mi pare chiaro è che lo ha fatto per gradi, ricercando una stesura anche nuova rispetto alle modulazioni del disegno e dell’incisione stessi.
 
-La puntualità e le simmetrie del disegno diventano sintesi descrittiva di un idillio con sentire leopardiano, una lettura sempre più prolungata e ripetuta dei suoi fogli straordinari. Ma Fiorucci è un’artista raro e discreto: ha il dono della poesia e nell' acquarello raggiunge - mi pare si debba dire - una eccezionale intensità di dettato così che ogni suo foglio è una pagina di poesia, di resistente poesia. La finezza del colore e la giustezza delle velature che usurano lo spazio e giocano con la luce, offrono nuove suggestioni ogni volta che si guarda: appunto come avviene con la vera poesia che rinnova l’eco interiore.
+La puntualità e le simmetrie del disegno diventano sintesi descrittiva di un idillio con sentire leopardiano, una lettura sempre più prolungata e ripetuta dei suoi fogli straordinari. Ma Fiorucci è un’artista raro e discreto: ha il dono della poesia e nell'acquarello raggiunge - mi pare si debba dire - una eccezionale intensità di dettato così che ogni suo foglio è una pagina di poesia, di resistente poesia. La finezza del colore e la giustezza delle velature che usurano lo spazio e giocano con la luce, offrono nuove suggestioni ogni volta che si guarda: appunto come avviene con la vera poesia che rinnova l’eco interiore.
 
 Da "La luce sui pioppi"\
 Edizioni L'Astrogallo, 1991
