@@ -66,6 +66,7 @@
 
 				> .content {
 					@include vendor('align-items', 'flex-end');
+					text-align: right;
 				}
 			}
 		}
