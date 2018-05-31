@@ -3,7 +3,7 @@ templateKey: generic-page
 orderIndex: 1
 title: Presentazione critica
 ---
-### L'acquarello di Franco Fiorucci
+## L'acquarello di Franco Fiorucci
 
 Franco Fiorucci nasce nell'officina della sua stessa città, con memorabili maestri del disegno e dell'incisione quali Carnevali, Castellani, Ceci, Buscaglia, Battistoni, solo per dire di alcuni di diversa generazione, che hanno trasmesso l’arte ad uno stuolo di allievi che oggi rappresentano in prima fila italiana e che hanno dato un contenuto storico a quella che comunemente, ormai, viene definita "la scuola d’Urbino".
 
@@ -37,4 +37,15 @@ Da "La luce sui pioppi"\
 Edizioni L'Astrogallo, 1991
 
 Maggio 1989\
+Valerio Volpini
+
+
+
+## Le virtù del Disegnatore
+
+Nell'introdurre alle testimonianze raccolte per Franco Fiorucci mi pare necessario sottolineare una considerazione che anche altri hanno fatto (lasciandomi ad un discorso compiuto per una prossima occasione) e cioè che egli possiede in misura eccezionale tutte le "virtù" del disegnatore. Ma perché non appaia un’affermazione inutile e trita aggiungerò che con questa intendo attribuirle l’uso perfetto di tutte le complesse possibilità grammaticali e sintattiche del segno che - oggi - con troppa faciloneria si credono non più necessarie quando addirittura non si reputano ostacoli per la comunicazione artistica. Si tratta di un patrimonio certamente assorbito per naturali eredità ma anche attraverso un costante impiego di intelligenza e di sacrificio, soprattutto attraverso l’impiego di un’umiltà interiore che, del resto, lo caratterizza anche umanamente. Senza voler divagare, e solo per non essere frainteso, aggiungerò ancora che penso sia necessario collocare nel retroterra di ogni modo di comunicare una precisa coscienza, una convinta identificazione degli strumenti perché possano funzionare come retroterra e fondamenta di tutte le possibilità dell’artista. Penso, insomma, che le "virtù" del linguaggio (non virtù formali, non specifiche nella loro particolarità ma soltanto nella loro essenza) contano come elementi necessari di libertà creativa e come mezzo di autenticazione della poesia e di credibilità di una ricerca qualunque sia il linguaggio scelto. Fiorucci, infatti, non è mai caduto nella trappola di una libertà pretestuosa o di una ricerca formale ma si è tenuto in costante coscienza tra i mezzi e i fini del proprio discorso. Anche se - poniamo - per il futuro dovesse staccarsi dalla maniera figurativa potremo star sicuri che egli non farebbe a meno di questa sua cultura.
+
+L'unità del segno, la capacità di raccogliere le strutture, di dare valore ai contenuti non è per lui abilità tecnica o mestiere ma applicazione di una poetica, sostanza e significato di quel che ci pone davanti dopo la propria osservazione e la propria contemplazione della realtà. E se di confrontano i passaggi e gli stessi contenuti o le diverse tecniche questa forza disegnativa appare poi trasformata in parola.
+
+Fano, 1974\
 Valerio Volpini
