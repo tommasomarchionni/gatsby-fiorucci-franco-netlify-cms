@@ -94,20 +94,29 @@ _Domenico Naso, 2008_
 
 ### Note biografiche
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+Franco Fiorucci è nato a Urbino nel 1936, ha compiuto l’intero corso di studio presso l’Istituto di Belle Arti per il Libro nella città natale specializzandosi nella tecnica litografica. Dal 1957 al 1987 ha diretto la Cattedra di Disegno della Moda e del Costume nell’Istituto d’Arte di Pesaro. Oltre a diverse mostre allestite nelle Marche e successivamente nel territorio nazionale è invitato dal Comune di Venezia opera Bevilacqua La Masa per la mostra incisori nazionali Venezia 1969.\
+E’ invitato dalla Sele Arte Moderna alla mostra "15 artisti italiani" Milano 1964. Invitato dal Comune di Ancona alla mostra grafica "Artisti Marchigiani" Ancona 1978.\
+Nel 1974 allestisce la mostra alla Galleria Barbaroux a Milano.\
+Dal 1976 al 1986 rappresenta con altri artisti europei l’acquerello a Bruxelles, Lugano e Londra in mostre promosse dal Centro Studi Artistici di Vienna.\
+Negli stessi anni sue mostre itineranti sono state promosse dal Comune di Milano nell'interland.\
+Nel 1980 presenta al Salone delle Nazioni di Parigi i suoi acquerelli allestiti dalla Galleria Arcangeli di Milano.\
+Per meriti artistici nel 1985 è stato nominato membro dell'"Accademia Raffaello di Urbino".
 
 ### Edizioni
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Nel 1968 ha curato l’edizione particolare con incisione litografica per la Banca Popolare Pescarese.\
+Nel 1984 cura due edizioni per La Pergola "venti artisti per Trebbiantico".\
+Nel 1994 pubblica otto litografie per Inter Firm Ancona "Le acque delle Marche".\
+Nel 2004 per le edizioni Fanitudine illustra "i Mesi" di Fabio Tombari.\
+Per meriti artistici la Galleria Sternberg di Chicago lo invita ad una esposizione di acquerelli.\
+Nel 2006 si progetta "L'organetto del tempo" con dodici acquarelli per la Banca Popolare Pescarese.\
+Sue opere figurano in molte collezioni private e nei musei nazionali.\
+Varie riviste marchigiane e nazionali hanno presentato diffusamente la sua opera.\
+Dal 1984 a tutt'oggi dirige un corso per acquarello a Pesaro.\
+Risiede a Pesaro con studio in via Tumiati, 57 – Telefono 0721.52314 – Cellulare 349.7505089.
 
-### Sustainable farming
+### Recensioni
 
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Nel 1974 mostra alla Galleria "Barbaroux" di Milano. Recensita da Valsecchi in concomitanza con mostre di Picasso e Arp come eventi dell’anno.\
+A Senigallia per il concorso "Premio Arte Poesia" vince la medaglia d’oro come artista marchigiano dell’anno 1980.\
+Sue opere si trovano in numerose gallerie nazionali e collezioni private.
