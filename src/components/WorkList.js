@@ -19,7 +19,7 @@ const WorkList = ({ listItems }) => {
 
     return (
         listItems.map(item => (
-            <Fragment key={item.title}>
+            <Fragment key={item.title + item.image}>
                 <section>
                     <a className="image">
                         <img src={item.image} alt={item.title} />

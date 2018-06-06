@@ -54,6 +54,13 @@ collections:
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Telefono", name: "telephone", widget: "string"}
           - {label: "Indirizzo", name: "address", widget: "text"}
+      - file: "src/pages/thanks/index.md"
+        label: "Pagina ringraziamento contatti"
+        name: "thankyou"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thankyou-page"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Corpo", name: "body", widget: "markdown"}
 
 #      - file: "src/pages/antologia-critica/index.md"
 #        label: "Antologia Critica"
