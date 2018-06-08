@@ -34,7 +34,7 @@ works:
     image: /img/il-bue-e-la-sua-anima_allattamento.jpg
     title: Allattamento
   - description: |-
-      Disegno, 1966\
+      disegno, 1966\
       Cm. 50 x 60
     image: /img/il-bue-e-la-sua-anima_quelli-che-sono-delle-stalle.jpg
     title: Quelli che sono delle stalle
@@ -55,18 +55,18 @@ works:
   - image: /img/il-bue-e-la-sua-anima_grande-maternita.jpg
     title: Grande maternità
   - description: |-
-      Tempera - Pastella, 1978\
+      tempera - pastella, 1978\
       Cm. 57 x 62
     image: /img/il-bue-e-la-sua-anima_l-attesa.jpg
     title: L'attesa
   - description: |-
-      Olio, 1977\
-      Cm. 29 x 42
+      olio, 1977\
+      cm. 29 x 42
     image: /img/il-bue-e-la-sua-anima_il-grande-scoglio.jpg
     title: Il grande scoglio
   - description: |-
-      Tempera, 1973\
-      Cm. 55 x 70 c.a
+      tempera, 1973\
+      cm. 55 x 70 c.a
     image: /img/il-bue-e-la-sua-anima_i-retable.jpg
     title: I retable
   - image: /img/il-bue-e-la-sua-anima_verso-le-stalle.jpg
