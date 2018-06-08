@@ -26,7 +26,7 @@ const WorkList = ({ listItems }) => {
                     </a>
                     <div className="content">
                         <div className="inner">
-                            <header className="major">
+                            <header className="major inline-flex">
                                 <h3>{item.title}</h3>
                             </header>
                             <HTMLContent className="inner" content={parseMarkdown(item.description)} />

@@ -18,8 +18,11 @@
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
-			display: inline-flex;
 			margin-bottom: _size(1em);
+
+			&.inline-flex {
+				display: inline-flex;
+			}
 
 			> :first-child {
 				margin-bottom: 0;
