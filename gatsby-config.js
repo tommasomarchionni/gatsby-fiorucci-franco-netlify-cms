@@ -6,6 +6,8 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
