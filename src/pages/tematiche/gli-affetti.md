@@ -2,7 +2,7 @@
 templateKey: theme-page
 orderIndex: 2
 title: gli affetti
-intro_image: ../../img/il-bue-e-la-sua-anima.jpg
+intro_image: ../../img/gli-affetti.jpg
 works:
   - description: |-
       disegno (1968)\
