@@ -65,7 +65,13 @@ export const pageQuery = graphql`
             email
             telephone
             address
-            intro_image
+            intro_image {
+              childImageSharp{
+                sizes(maxWidth: 800) {
+                    ...GatsbyImageSharpSizes
+                }
+              }
+            }
             templateKey
             subtitle
           }

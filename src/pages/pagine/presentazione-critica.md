@@ -2,6 +2,7 @@
 templateKey: generic-page
 orderIndex: 1
 title: Presentazione critica
+intro_image: ../../img/il-bue-e-la-sua-anima.jpg
 ---
 ## L'acquarello di Franco Fiorucci
 

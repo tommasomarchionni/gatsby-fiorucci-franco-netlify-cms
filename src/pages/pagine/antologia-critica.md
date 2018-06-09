@@ -2,6 +2,7 @@
 templateKey: generic-page
 orderIndex: 2
 title: Antologia critica
+intro_image: ../../img/il-bue-e-la-sua-anima.jpg
 ---
 … le sue litografie sono d'un accento talmente attuale da farmi ritenere quei fogli per il loro alto contenuto decorativo, fra le più valide manifestazioni d’arte grafica che circolano in questi anni nel nostro paese\
 _Francesco Carnevali, 1961_
