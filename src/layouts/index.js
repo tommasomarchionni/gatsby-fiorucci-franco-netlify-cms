@@ -3,18 +3,18 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import ScrollToTop from 'react-scroll-up'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import faArrowAltCircleUp from '@fortawesome/fontawesome-free-solid/faArrowAltCircleUp'
+import FaArrowAltCircleUp from '@fortawesome/fontawesome-free-solid/faArrowAltCircleUp'
 
 import './scss/main.scss'
 
 class TemplateWrapper extends React.Component {
 
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             isMenuVisible: false,
             loading: 'is-loading'
-        }
+        };
         this.handleToggleMenu = this.handleToggleMenu.bind(this)
     }
 
@@ -37,9 +37,9 @@ class TemplateWrapper extends React.Component {
     }
 
     render() {
-        const { children } = this.props
-        const siteTitle = this.props.data.site.siteMetadata.title
-        const siteDescription = this.props.data.site.siteMetadata.description
+        const { children } = this.props;
+        const siteTitle = this.props.data.site.siteMetadata.title;
+        const siteDescription = this.props.data.site.siteMetadata.description;
         return (
             <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
                 <Helmet>
@@ -52,7 +52,7 @@ class TemplateWrapper extends React.Component {
                 </div>
                 {/*<Menu onToggleMenu={this.handleToggleMenu} />*/}
                 <ScrollToTop showUnder={160}>
-                    <FontAwesomeIcon duration={500} style={{height: '40px', width: '40px'}} icon={faArrowAltCircleUp} />
+                    <FontAwesomeIcon duration={500} style={{height: '40px', width: '40px'}} icon={FaArrowAltCircleUp} />
                 </ScrollToTop>
             </div>
         )
@@ -69,7 +69,7 @@ TemplateWrapper.propTypes = {
             })
         })
     })
-}
+};
 
 export default TemplateWrapper
 
@@ -82,4 +82,4 @@ export const pageQuery = graphql`
             }
         }
     }
-`
+`;

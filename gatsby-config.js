@@ -39,6 +39,24 @@ module.exports = {
         },
     },
     {
+        resolve: `gatsby-plugin-favicon`,
+        options: {
+            logo: "./src/favicon.png",
+            injectHTML: true,
+            icons: {
+                android: true,
+                appleIcon: true,
+                appleStartup: true,
+                coast: true,
+                favicons: true,
+                firefox: true,
+                twitter: true,
+                yandex: true,
+                windows: true
+            }
+        }
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
