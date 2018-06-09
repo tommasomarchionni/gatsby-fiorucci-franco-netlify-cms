@@ -2,7 +2,7 @@
 templateKey: theme-page
 orderIndex: 3
 title: dal montefeltro alle terre avare
-intro_image: ../../img/il-bue-e-la-sua-anima.jpg
+intro_image: ../../img/dal-montefeltro-alle-terre-avare.jpg
 works:
   - description: ''
     image: ../../img/dal-montefeltro-alle-terre-avare_il-neonato.jpg
@@ -65,7 +65,7 @@ works:
   - description: |-
       tecnica mista (1980)\
       70 x 60 cm
-    image: ../../img/non-disponibile.jpg  
+    image: ../../img/non-disponibile.jpg
     title: Dentro la stalla
   - description: |-
       acquarello (1988)\
@@ -98,7 +98,7 @@ works:
   - description: |-
       gouche (1997)\
       50 x 35 cm
-    image: ../../img/non-disponibile.jpg  
+    image: ../../img/non-disponibile.jpg
     title: Quelli delle terre crude
 ---
 
