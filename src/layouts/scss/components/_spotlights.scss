@@ -38,6 +38,10 @@
 					border-left-color: #2e2e2e;
 					border-right-color: #000000;
 					margin: 20px;
+
+					.gatsby-image-wrapper img {
+						@include object-fit(cover, center center);
+					}
 				}
 
 				&:before {
