@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import ScrollToTop from 'react-scroll-up'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import faArrowAltCircleUp from '@fortawesome/fontawesome-free-solid/faArrowAltCircleUp'
 
 import './scss/main.scss'
 
@@ -48,6 +51,9 @@ class TemplateWrapper extends React.Component {
                     {children()}
                 </div>
                 {/*<Menu onToggleMenu={this.handleToggleMenu} />*/}
+                <ScrollToTop showUnder={160}>
+                    <FontAwesomeIcon duration={500} style={{height: '40px', width: '40px'}} icon={faArrowAltCircleUp} />
+                </ScrollToTop>
             </div>
         )
     }
