@@ -26,6 +26,7 @@ const WorkList = ({ listItems }) => {
                         <Img
                             sizes={item.image.childImageSharp.sizes}
                             alt={item.title}
+
                         />
                     </a>
                     <div className="content">
