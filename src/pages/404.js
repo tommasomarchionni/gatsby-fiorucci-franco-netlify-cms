@@ -1,10 +1,36 @@
 import React from 'react'
+import { NotFoundPageTemplate } from "../templates/notfound-page";
+import { HTMLContent } from '../components/Content'
 
-const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+const NotFoundPageNetlify = ({data}) => {
+    return data.allMarkdownRemark.edges
+        .filter((page) => page.node.frontmatter.templateKey === 'notfound-page')
+        .map((page) =>
+            (
+                <NotFoundPageTemplate
+                    contentComponent={HTMLContent}
+                    title={page.node.frontmatter.title}
+                    content={page.node.html}
+                />
+            )
+    ).pop();
+};
 
-export default NotFoundPage
+export default NotFoundPageNetlify
+
+export const notFoundNetlifyQuery = graphql`
+  query notFoundNetlifyQuery {
+    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___orderIndex] }) {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            title
+            templateKey
+          }
+        }
+      }
+    }
+  }
+`

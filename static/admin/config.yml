@@ -60,6 +60,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thankyou-page"}
           - {label: "Titolo", name: "title", widget: "string"}
           - {label: "Corpo", name: "body", widget: "markdown"}
+      - file: "src/pages/not-found/index.md"
+        label: "Pagina non trovata"
+        name: "notfound"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "notfound-page"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Corpo", name: "body", widget: "markdown"}
 
 #      - file: "src/pages/antologia-critica/index.md"
 #        label: "Antologia Critica"
