@@ -65,6 +65,7 @@ works:
   - description: |-
       tecnica mista (1980)\
       70 x 60 cm
+    image: ../../img/non-disponibile.jpg  
     title: Dentro la stalla
   - description: |-
       acquarello (1988)\
@@ -92,10 +93,12 @@ works:
     image: ../../img/dal-montefeltro-alle-terre-avare_verso-sera.jpg
     title: Verso sera
   - description: acquarello (1998)
+    image: ../../img/non-disponibile.jpg
     title: Il pasto
   - description: |-
       gouche (1997)\
       50 x 35 cm
+    image: ../../img/non-disponibile.jpg  
     title: Quelli delle terre crude
 ---
 

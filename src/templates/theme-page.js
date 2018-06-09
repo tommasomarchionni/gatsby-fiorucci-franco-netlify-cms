@@ -94,7 +94,13 @@ export const pageQuery = graphql`
         title
         subtitle
         works {
-          image
+          image {
+            childImageSharp{
+              sizes(maxWidth: 800) {
+                  ...GatsbyImageSharpSizes
+              }
+            }
+          }
           title
           description  
         }

@@ -4,6 +4,7 @@ import { HTMLContent } from "./Content";
 import remark from 'remark';
 import styleGuide from 'remark-preset-lint-markdown-style-guide';
 import remarkHtml from 'remark-html';
+import Img from "gatsby-image";
 
 const WorkList = ({ listItems }) => {
 
@@ -22,7 +23,10 @@ const WorkList = ({ listItems }) => {
             <Fragment key={item.title + item.image}>
                 <section>
                     <a className="image">
-                        <img src={item.image} alt={item.title} />
+                        <Img
+                            sizes={item.image.childImageSharp.sizes}
+                            alt={item.title}
+                        />
                     </a>
                     <div className="content">
                         <div className="inner">
@@ -41,7 +45,7 @@ const WorkList = ({ listItems }) => {
 WorkList.propTypes = {
   listItems: PropTypes.arrayOf(
     PropTypes.shape({
-        image: PropTypes.string.isRequired,
+        image: PropTypes.object.isRequired,
         title: PropTypes.string.isRequired,
         description: PropTypes.string,
     })
