@@ -1,5 +1,10 @@
 import React from 'react'
 import PropTypes from "prop-types";
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import FaEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope'
+import FaPhone from "@fortawesome/fontawesome-free-solid/faPhone";
+import FaHome from "@fortawesome/fontawesome-free-solid/faHome";
+import FaCircle from "@fortawesome/fontawesome-free-solid/faCircle";
 
 const Contact = ({
     email,
@@ -33,21 +38,21 @@ const Contact = ({
             <section className="split">
                 <section>
                     <div className="contact-method">
-                        <span className="icon alt fa-envelope"></span>
+                        <FontAwesomeIcon className="icon alt" transform={'shrink-10' } mask={FaCircle} icon={FaEnvelope} />
                         <h3>Email</h3>
                         <a href="#">{email}</a>
                     </div>
                 </section>
                 <section>
                     <div className="contact-method">
-                        <span className="icon alt fa-phone"></span>
+                        <FontAwesomeIcon className="icon alt" transform={'shrink-10 flip-h ' } mask={FaCircle} icon={FaPhone} />
                         <h3>Telefono</h3>
                         <span>{telephone}</span>
                     </div>
                 </section>
                 <section>
                     <div className="contact-method">
-                        <span className="icon alt fa-home"></span>
+                        <FontAwesomeIcon className="icon alt" transform={'shrink-10' } mask={FaCircle} icon={FaHome} />
                         <h3>Indirizzo</h3>
                         {address}
                     </div>

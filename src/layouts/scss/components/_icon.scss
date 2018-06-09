@@ -10,6 +10,8 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
+		height: 35px !important;
+		width: 35px !important;
 
 		> .label {
 			display: none;
