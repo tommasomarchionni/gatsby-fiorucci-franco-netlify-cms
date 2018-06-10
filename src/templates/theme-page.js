@@ -69,7 +69,7 @@ export class ThemePageTemplate extends Component {
                         {
                             this.props.works.map((work, index) => {
                                 return (
-                                    <Work key={work.title + work.image}
+                                    <Work key={work.image.childImageSharp.sizes.src}
                                           image={work.image}
                                           title={work.title}
                                           description={this.parseMarkdown(work.description)}
