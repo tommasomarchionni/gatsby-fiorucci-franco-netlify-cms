@@ -65,7 +65,7 @@ class TemplateWrapper extends React.Component {
                         .pop()}
                 </div>
                 <Menu onToggleMenu={this.handleToggleMenu} />
-                <ScrollToTop showUnder={160}>
+                <ScrollToTop style={{'z-index': '100'}} showUnder={160}>
                     <FontAwesomeIcon duration={500} style={{height: '40px', width: '40px'}} icon={FaArrowAltCircleUp} />
                 </ScrollToTop>
             </div>
