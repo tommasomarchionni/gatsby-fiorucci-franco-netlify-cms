@@ -25,7 +25,9 @@
 				display: block;
 				position: relative;
 				width: 35%;
+				margin: 20px;
 				margin-left: 100px;
+				cursor: pointer;
 
 				> div.gatsby-image-outer-wrapper {
 					position: relative;
@@ -37,7 +39,6 @@
 					border-top-color: #2e2e2e;
 					border-left-color: #2e2e2e;
 					border-right-color: #000000;
-					margin: 20px;
 
 					.gatsby-image-wrapper img {
 						@include object-fit(cover, center center);
@@ -85,7 +86,7 @@
 
 				> .image {
 					margin-right: 100px;
-					margin-left: 0;
+					margin-left: 20px;
 				}
 			}
 		}
@@ -119,13 +120,13 @@
 		@include breakpoint(small) {
 			> section {
 				> .image {
-					margin-left: 0;
+					margin-left: 20px;
 					width: 50%;
 				}
 
 				&:nth-child(2n) {
 					> .image {
-						margin-right: 0;
+						margin-right: 20px;
 					}
 				}
 			}
@@ -139,6 +140,7 @@
 					width: 100%;
 					padding: 30px;
 					text-align: center;
+					margin-left: 0;
 				}
 
 				> .content {
@@ -149,6 +151,11 @@
 				&:nth-child(2n) {
 					> .content {
 						text-align: center;
+					}
+
+					> .image {
+						margin-right: 0;
+						margin-left: 0;
 					}
 				}
 			}

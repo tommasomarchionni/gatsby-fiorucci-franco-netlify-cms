@@ -1,26 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import Content from "./Content";
+import { HTMLContent } from "./Content";
+import Img from "gatsby-image";
 
-const Work = ({ image, title, content, contentComponent }) =>  (
-    <section>
-        <img src={image} alt={title} />
-        <div className="content">
-            <div className="inner">
-                <header className="major">
-                    <h3>{title}</h3>
-                </header>
-                <Content className="inner" content={content} />
+const Work = ({ image, title, description, onClick }) =>  {
+    return (
+        <section>
+            <a className="image" onClick={() => onClick({title, description})}>
+                <Img
+                    sizes={image.childImageSharp.sizes}
+                    alt={title}
+                />
+            </a>
+            <div className="content">
+                <div className="inner">
+                    <header className="major inline-flex">
+                        <h3>{title}</h3>
+                    </header>
+                    <HTMLContent className="inner" content={description} />
+                </div>
             </div>
-        </div>
-    </section>
-)
+        </section>
+    )
+};
 
 Work.propTypes = {
-    image: PropTypes.string.isRequired,
+    image: PropTypes.object.isRequired,
     title: PropTypes.string.isRequired,
-    content: PropTypes.string,
-    contentComponent: PropTypes.func,
-}
+    onClick: PropTypes.func.isRequired,
+    description: PropTypes.string,
+};
 
 export default Work

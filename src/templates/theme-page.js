@@ -1,64 +1,108 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Content, { HTMLContent } from '../components/Content'
-import Link from 'gatsby-link'
 import BannerLanding from '../components/BannerLanding'
 import Work from "../components/Work";
-import WorkList from "../components/WorkList";
+import { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
+import remark from "remark";
+import styleGuide from 'remark-preset-lint-markdown-style-guide';
+import remarkHtml from 'remark-html';
 
-export const ThemePageTemplate = ({
-  title,
-  subtitle,
-  works,
-}) => (
-  <div>
-      <BannerLanding title={title} subtitle={subtitle}/>
+export class ThemePageTemplate extends Component {
 
-      <div id="main">
-          <section id="two" className="spotlights">
-                <WorkList listItems={works}/>
-              {/*<Work*/}
-                  {/*contentComponent={HTMLContent}*/}
-                  {/*title={post.frontmatter.title}*/}
-                  {/*content={post.html}*/}
-              {/*/>*/}
-              {/*<section>*/}
-                  {/*<Link to="/generic" className="image">*/}
-                      {/*<img src={pic09} alt="" />*/}
-                  {/*</Link>*/}
-                  {/*<div className="content">*/}
-                      {/*<div className="inner">*/}
-                          {/*<header className="major">*/}
-                              {/*<h3>Rhoncus magna</h3>*/}
-                          {/*</header>*/}
-                          {/*<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>*/}
-                          {/*<ul className="actions">*/}
-                              {/*<li><Link to="/generic" className="button">Learn more</Link></li>*/}
-                          {/*</ul>*/}
-                      {/*</div>*/}
-                  {/*</div>*/}
-              {/*</section>*/}
-              {/*<section>*/}
-                  {/*<Link to="/generic" className="image">*/}
-                      {/*<img src={pic10} alt="" />*/}
-                  {/*</Link>*/}
-                  {/*<div className="content">*/}
-                      {/*<div className="inner">*/}
-                          {/*<header className="major">*/}
-                              {/*<h3>Sed nunc ligula</h3>*/}
-                          {/*</header>*/}
-                          {/*<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>*/}
-                          {/*<ul className="actions">*/}
-                              {/*<li><Link to="/generic" className="button">Learn more</Link></li>*/}
-                          {/*</ul>*/}
-                      {/*</div>*/}
-                  {/*</div>*/}
-              {/*</section>*/}
-          </section>
-      </div>
-  </div>
-)
+    constructor(props) {
+        super(props);
+        this.state = {
+            photoIndex: 0,
+            isOpen: false,
+        };
+    };
+
+    parseMarkdown(md) {
+        return remark()
+            .use({
+                settings: {commonmark: true}
+            })
+            .use(styleGuide)
+            .use(remarkHtml)
+            .processSync(md).toString();
+    };
+
+    handleClick(index) {
+        this.setState({
+            photoIndex: index,
+            isOpen: true
+        });
+    };
+
+    getDangerousHtml(descriptionMarkdown) {
+        let content = null;
+        if (descriptionMarkdown) {
+            const html = this.parseMarkdown(descriptionMarkdown);
+            content = (<div dangerouslySetInnerHTML={{ __html: html }} />)
+        }
+        return content;
+    };
+
+    render() {
+        const { photoIndex, isOpen } = this.state;
+        const images = this.props.works.map((work) => {
+            return {
+                src: work.image.childImageSharp.sizes.src,
+                title: work.title,
+                description: work.description
+            }
+        });
+
+        return (
+            <div>
+                <BannerLanding title={this.props.title} subtitle={this.props.subtitle}/>
+                <div id="main">
+                    <section id="two" className="spotlights">
+                        {
+                            this.props.works.map((work, index) => {
+                                return (
+                                    <Work key={work.title + work.image}
+                                          image={work.image}
+                                          title={work.title}
+                                          description={this.parseMarkdown(work.description)}
+                                          onClick={() => this.handleClick(index)}
+                                    />
+                                )
+                            })
+                        }
+                        <div>
+                            {isOpen && (
+                                <Lightbox
+                                    mainSrc={images[photoIndex].src}
+                                    nextSrc={images[(photoIndex + 1) % images.length].src}
+                                    prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
+                                    discourageDownloads={true}
+                                    enableZoom={false}
+                                    animationOnKeyInput={true}
+                                    imageTitle={images[photoIndex].title}
+                                    imageCaption={this.getDangerousHtml(images[photoIndex].description)}
+                                    onCloseRequest={() => this.setState({ isOpen: false })}
+                                    onMovePrevRequest={() =>
+                                        this.setState({
+                                            photoIndex: (photoIndex + images.length - 1) % images.length,
+                                        })
+                                    }
+                                    onMoveNextRequest={() =>
+                                        this.setState({
+                                            photoIndex: (photoIndex + 1) % images.length,
+                                        })
+                                    }
+                                />
+                            )}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        );
+    }
+}
 
 ThemePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
@@ -75,13 +119,13 @@ const ThemePage = ({ data }) => {
       works={theme.frontmatter.works}
     />
   )
-}
+};
 
 ThemePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-}
+};
 
 export default ThemePage
 
@@ -107,4 +151,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
