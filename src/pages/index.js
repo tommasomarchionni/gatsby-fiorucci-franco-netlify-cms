@@ -27,15 +27,6 @@ export default class IndexPage extends React.Component {
                                 key={theme.id} />
                     ))}
                 </section>
-                {pages
-                    .filter(theme => theme.node.frontmatter.templateKey === 'contact-page')
-                    .map(({ node: theme }) => (
-                        <Contact
-                            key={theme.id}
-                            email={theme.frontmatter.email}
-                            telephone={theme.frontmatter.telephone}
-                            address={theme.frontmatter.address} />
-                    ))}
             </div>
         </div>
     )

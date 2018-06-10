@@ -6,6 +6,7 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import FaArrowAltCircleUp from '@fortawesome/fontawesome-free-solid/faArrowAltCircleUp'
 
 import './scss/main.scss'
+import Contact from "../components/Contact";
 
 class TemplateWrapper extends React.Component {
 
@@ -38,6 +39,7 @@ class TemplateWrapper extends React.Component {
 
     render() {
         const { children } = this.props;
+        const pages = this.props.data.allMarkdownRemark.edges;
         const siteTitle = this.props.data.site.siteMetadata.title;
         const siteDescription = this.props.data.site.siteMetadata.description;
         return (
@@ -49,6 +51,16 @@ class TemplateWrapper extends React.Component {
                 <div id="wrapper">
                     {/*<Header onToggleMenu={this.handleToggleMenu} />*/}
                     {children()}
+                    {pages
+                        .filter(theme => theme.node.frontmatter.templateKey === 'contact-page')
+                        .map(({ node: theme }) => (
+                            <Contact
+                                key={theme.id}
+                                email={theme.frontmatter.email}
+                                telephone={theme.frontmatter.telephone}
+                                address={theme.frontmatter.address} />
+                        ))
+                        .pop()}
                 </div>
                 {/*<Menu onToggleMenu={this.handleToggleMenu} />*/}
                 <ScrollToTop showUnder={160}>
@@ -79,6 +91,26 @@ export const pageQuery = graphql`
             siteMetadata {
                 title
                 description
+            }
+        }
+        # get all contact-page
+        allMarkdownRemark  (
+            filter: {
+                frontmatter: {
+                    templateKey: {eq: "contact-page"}
+                }
+            }
+        ) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        templateKey
+                        email
+                        telephone
+                        address
+                    }
+                }
             }
         }
     }
