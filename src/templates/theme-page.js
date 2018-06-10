@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import BannerLanding from '../components/BannerLanding'
 import Work from "../components/Work";
 import { Component } from 'react';
-import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import remark from "remark";
 import styleGuide from 'remark-preset-lint-markdown-style-guide';
@@ -18,6 +17,12 @@ export class ThemePageTemplate extends Component {
             isOpen: false,
         };
     };
+
+    componentDidMount() {
+        // this library in normal import throw errors during compile for inside window declarations problems
+        const lightbox = require('react-image-lightbox');
+        this.Lightbox = lightbox.default;
+    }
 
     parseMarkdown(md) {
         return remark()
@@ -47,6 +52,7 @@ export class ThemePageTemplate extends Component {
 
     render() {
         const { photoIndex, isOpen } = this.state;
+        const Lightbox = this.Lightbox;
         const images = this.props.works.map((work) => {
             return {
                 src: work.image.childImageSharp.sizes.src,
