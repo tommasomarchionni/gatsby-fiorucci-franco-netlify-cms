@@ -7,6 +7,8 @@ import FaArrowAltCircleUp from '@fortawesome/fontawesome-free-solid/faArrowAltCi
 
 import './scss/main.scss'
 import Contact from "../components/Contact";
+import Menu from "../components/Menu";
+import Header from "../components/Header";
 
 class TemplateWrapper extends React.Component {
 
@@ -49,7 +51,7 @@ class TemplateWrapper extends React.Component {
                     <meta name="description" content={siteDescription} />
                 </Helmet>
                 <div id="wrapper">
-                    {/*<Header onToggleMenu={this.handleToggleMenu} />*/}
+                    <Header onToggleMenu={this.handleToggleMenu} />
                     {children()}
                     {pages
                         .filter(theme => theme.node.frontmatter.templateKey === 'contact-page')
@@ -62,7 +64,7 @@ class TemplateWrapper extends React.Component {
                         ))
                         .pop()}
                 </div>
-                {/*<Menu onToggleMenu={this.handleToggleMenu} />*/}
+                <Menu onToggleMenu={this.handleToggleMenu} />
                 <ScrollToTop showUnder={160}>
                     <FontAwesomeIcon duration={500} style={{height: '40px', width: '40px'}} icon={FaArrowAltCircleUp} />
                 </ScrollToTop>
