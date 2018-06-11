@@ -63,7 +63,7 @@ export class ThemePageTemplate extends Component {
 
         return (
             <div>
-                <BannerLanding title={this.props.title} subtitle={this.props.subtitle}/>
+                <BannerLanding title={this.props.title} subtitle={this.props.subtitle} background={this.props.introImage}/>
                 <div id="main">
                     <section id="two" className="spotlights">
                         {
@@ -113,6 +113,7 @@ export class ThemePageTemplate extends Component {
 ThemePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
+  introImage: PropTypes.string,
   works: PropTypes.array,
 }
 
@@ -122,6 +123,7 @@ const ThemePage = ({ data }) => {
     <ThemePageTemplate
       title={theme.frontmatter.title}
       subtitle={theme.frontmatter.subtitle}
+      introImage={theme.frontmatter.intro_image.childImageSharp.sizes.src}
       works={theme.frontmatter.works}
     />
   )
@@ -143,6 +145,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
+        intro_image {
+            childImageSharp{
+              sizes(maxWidth: 800) {
+                  ...GatsbyImageSharpSizes
+              }
+            }
+        }
         works {
           image {
             childImageSharp{

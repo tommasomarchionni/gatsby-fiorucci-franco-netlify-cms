@@ -1,9 +1,16 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import PropTypes from "prop-types";
+import Background from '../img/banner.jpg';
 
-const Banner = ({pages}) => (
-    <section id="banner" className="major">
+const sectionStyle = (background) => {
+    background = background || Background;
+    console.log(background);
+    return {backgroundImage: `url(${background})`}
+};
+
+const Banner = ({pages, background}) => (
+    <section style={ sectionStyle(background) } id="banner" className="major">
         <div className="inner">
             <header className="major">
                 <h1>Fiorucci Franco</h1>
@@ -18,7 +25,7 @@ const Banner = ({pages}) => (
             ))}
         </div>
     </section>
-)
+);
 
 Banner.propTypes = {
     pages: PropTypes.arrayOf(
@@ -35,7 +42,8 @@ Banner.propTypes = {
                 title: PropTypes.string,
             }),
         }),
-    )
-}
+    ),
+    background: PropTypes.string
+};
 
 export default Banner
