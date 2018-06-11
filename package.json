@@ -35,7 +35,6 @@
     "remark-html": "^7.0.0",
     "remark-parse": "^5.0.0",
     "remark-preset-lint-markdown-style-guide": "^2.1.1",
-    "sharp": "^0.20.3",
     "uuid": "^3.2.1"
   },
   "keywords": [
