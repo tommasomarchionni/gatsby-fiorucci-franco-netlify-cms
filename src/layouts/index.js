@@ -40,10 +40,9 @@ class TemplateWrapper extends React.Component {
     }
 
     render() {
-        const { children } = this.props;
-        const pages = this.props.data.allMarkdownRemark.edges;
-        const siteTitle = this.props.data.site.siteMetadata.title;
-        const siteDescription = this.props.data.site.siteMetadata.description;
+        const { children, data: { site, contactPages, genericPages } } = this.props;
+        const siteTitle = site.siteMetadata.title;
+        const siteDescription = site.siteMetadata.description;
         return (
             <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
                 <Helmet>
@@ -53,18 +52,17 @@ class TemplateWrapper extends React.Component {
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
                     {children()}
-                    {pages
-                        .filter(theme => theme.node.frontmatter.templateKey === 'contact-page')
-                        .map(({ node: theme }) => (
+                    {contactPages.edges
+                        .map(({ node: contact }) => (
                             <Contact
-                                key={theme.id}
-                                email={theme.frontmatter.email}
-                                telephone={theme.frontmatter.telephone}
-                                address={theme.frontmatter.address} />
+                                key={contact.id}
+                                email={contact.frontmatter.email}
+                                telephone={contact.frontmatter.telephone}
+                                address={contact.frontmatter.address} />
                         ))
                         .pop()}
                 </div>
-                <Menu onToggleMenu={this.handleToggleMenu} />
+                <Menu pages={genericPages.edges} onToggleMenu={this.handleToggleMenu} />
                 <ScrollToTop style={{zIndex: 100}} showUnder={160}>
                     <FontAwesomeIcon duration={500} style={{height: '40px', width: '40px'}} icon={FaArrowAltCircleUp} />
                 </ScrollToTop>
@@ -81,7 +79,9 @@ TemplateWrapper.propTypes = {
                 title: PropTypes.string,
                 description: PropTypes.string
             })
-        })
+        }),
+        contactPages: PropTypes.object,
+        genericPages: PropTypes.object
     })
 };
 
@@ -94,9 +94,30 @@ export const pageQuery = graphql`
                 title
                 description
             }
-        }
+        }        
+        # get all generic-page        
+        genericPages: allMarkdownRemark (
+            sort: { order: ASC, fields: [frontmatter___orderIndex] }
+            filter: {
+                frontmatter: {
+                    templateKey: {eq: "generic-page"}
+                }
+            }
+        ) {
+            edges {
+                node {
+                    id
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        title
+                    }
+                }
+            }
+        }        
         # get all contact-page
-        allMarkdownRemark  (
+        contactPages: allMarkdownRemark (
             filter: {
                 frontmatter: {
                     templateKey: {eq: "contact-page"}
@@ -107,7 +128,6 @@ export const pageQuery = graphql`
                 node {
                     id
                     frontmatter {
-                        templateKey
                         email
                         telephone
                         address

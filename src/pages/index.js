@@ -2,12 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Banner from '../components/Banner'
 import Theme from '../components/Theme'
-import Contact from "../components/Contact";
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: pages } = data.allMarkdownRemark
+    const { data } = this.props;
+    const { edges: pages } = data.allMarkdownRemark;
 
     return (
         <div>
@@ -39,7 +38,7 @@ IndexPage.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-}
+};
 
 export const pageQuery = graphql`
   query IndexQuery {
