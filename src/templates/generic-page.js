@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
 export const GenericPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+  const PageContent = contentComponent || Content;
 
   return (
       <div>
@@ -23,13 +23,13 @@ export const GenericPageTemplate = ({ title, content, contentComponent }) => {
           </div>
       </div>
   )
-}
+};
 
 GenericPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-}
+};
 
 const GenericPage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -41,11 +41,11 @@ const GenericPage = ({ data }) => {
       content={post.html}
     />
   )
-}
+};
 
 GenericPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
 export default GenericPage
 
@@ -58,4 +58,4 @@ export const genericPageQuery = graphql`
       }
     }
   }
-`
+`;
