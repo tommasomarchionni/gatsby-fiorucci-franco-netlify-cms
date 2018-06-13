@@ -6,18 +6,6 @@ media_folder: src/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "theme"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
   - name: "themes"
     label: "Tematiche"
     folder: "src/pages/tematiche"
@@ -30,6 +18,7 @@ collections:
       - {label: "Sottotitolo", name: "subtitle", widget: "string", required: false}
       - {label: "Immagine iniziale", name: "intro_image", widget: "custompathimage", customMediaPath: "../../img/", rawMediaPath: "https://raw.githubusercontent.com/tommasomarchionni/gatsby-fiorucci-franco-netlify-cms/master/src/img/"}
       - {label: "Opere", name: "works", widget: "list", fields: [{label: "Titolo", name: "title", widget: "string"}, {label: "Descrizione", name: "description", widget: "markdown", required: false}, {label: "Immagine", name: "image", widget: "custompathimage", customMediaPath: "../../img/", rawMediaPath: "https://raw.githubusercontent.com/tommasomarchionni/gatsby-fiorucci-franco-netlify-cms/master/src/img/"}]}
+
   - name: "pages"
     label: "Pagine"
     folder: "src/pages/pagine"
@@ -40,6 +29,7 @@ collections:
       - {label: "Posizione", name: "orderIndex", widget: "number", default: 1, valueType: "int", min: 1}
       - {label: "Titolo", name: "title", widget: "string"}
       - {label: "Corpo", name: "body", widget: "markdown"}
+      - {label: "Immagine iniziale", name: "intro_image", widget: "custompathimage", customMediaPath: "../../img/", rawMediaPath: "https://raw.githubusercontent.com/tommasomarchionni/gatsby-fiorucci-franco-netlify-cms/master/src/img/"}
 
   - name: "settings"
     label: "Impostazioni"
@@ -53,6 +43,7 @@ collections:
           - {label: "Email", name: "email", widget: "string"}
           - {label: "Telefono", name: "telephone", widget: "string"}
           - {label: "Indirizzo", name: "address", widget: "text"}
+
       - file: "src/pages/thanks/index.md"
         label: "Pagina ringraziamento contatti"
         name: "thankyou"
@@ -60,6 +51,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "thankyou-page"}
           - {label: "Titolo", name: "title", widget: "string"}
           - {label: "Corpo", name: "body", widget: "markdown"}
+
       - file: "src/pages/not-found/index.md"
         label: "Pagina non trovata"
         name: "notfound"
@@ -67,32 +59,3 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "notfound-page"}
           - {label: "Titolo", name: "title", widget: "string"}
           - {label: "Corpo", name: "body", widget: "markdown"}
-
-#      - file: "src/pages/antologia-critica/index.md"
-#        label: "Antologia Critica"
-#        name: "critical-anthology"
-#        fields:
-#          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "generic-page"}
-#          - {label: "Titolo", name: "title", widget: "string"}
-#          - {label: "Corpo", name: "body", widget: "markdown"}
-#      - file: "src/pages/about/index.md"
-#        label: "About"
-#        name: "about"
-#        fields:
-#          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-#          - {label: "Title", name: "title", widget: "string"}
-#          - {label: "Body", name: "body", widget: "markdown"}
-#      - file: "src/pages/products/index.md"
-#        label: "Products Page"
-#        name: "products"
-#        fields:
-#          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-#          - {label: Title, name: title, widget: string}
-#          - {label: Image, name: image, widget: image}
-#          - {label: Heading, name: heading, widget: string}
-#          - {label: Description, name: description, widget: string}
-#          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-#          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-#          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-#          - {label: Full_image, name: full_image, widget: image}
-#          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}

@@ -30,16 +30,12 @@ const Banner = ({pages, background}) => (
 Banner.propTypes = {
     pages: PropTypes.arrayOf(
         PropTypes.shape({
-            excerpt: PropTypes.string,
             id: PropTypes.string,
             fields: PropTypes.shape({
-                slug: PropTypes.string,
+                slug: PropTypes.string.isRequired,
             }),
             frontmatter: PropTypes.shape({
-                intro_image: PropTypes.string,
-                subtitle: PropTypes.string,
-                templateKey: PropTypes.string,
-                title: PropTypes.string,
+                title: PropTypes.string.isRequired,
             }),
         }),
     ),

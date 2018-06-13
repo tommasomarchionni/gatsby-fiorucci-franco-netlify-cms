@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import ScrollToTop from 'react-scroll-up'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import FaArrowAltCircleUp from '@fortawesome/fontawesome-free-solid/faArrowAltCircleUp'
-
 import './scss/main.scss'
 import Contact from "../components/Contact";
 import Menu from "../components/Menu";
@@ -80,8 +79,12 @@ TemplateWrapper.propTypes = {
                 description: PropTypes.string
             })
         }),
-        contactPages: PropTypes.object,
-        genericPages: PropTypes.object
+        contactPages: PropTypes.shape({
+            edges: PropTypes.array
+        }),
+        genericPages: PropTypes.shape({
+            edges: PropTypes.array
+        })
     })
 };
 
