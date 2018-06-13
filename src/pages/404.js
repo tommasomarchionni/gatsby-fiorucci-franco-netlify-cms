@@ -4,10 +4,10 @@ import { HTMLContent } from '../components/Content'
 
 const NotFoundPageNetlify = ({data}) => {
     return data.allMarkdownRemark.edges
-        .filter((page) => page.node.frontmatter.templateKey === 'notfound-page')
         .map((page) =>
             (
                 <NotFoundPageTemplate
+                    key={page.node.id}
                     contentComponent={HTMLContent}
                     title={page.node.frontmatter.title}
                     content={page.node.html}
@@ -20,17 +20,22 @@ export default NotFoundPageNetlify
 
 export const notFoundNetlifyQuery = graphql`
   query notFoundNetlifyQuery {
-    allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___orderIndex] }) {
+    allMarkdownRemark(
+        filter: {
+            frontmatter: {
+                templateKey: {eq: "notfound-page"}
+            }
+        }
+    ) {
       edges {
         node {
           id
           html
           frontmatter {
             title
-            templateKey
           }
         }
       }
     }
   }
-`
+`;

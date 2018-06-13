@@ -21,13 +21,13 @@ const Theme = ({image, title, subtitle, link}) => (
         </header>
         <Link to={link} className="link primary"/>
     </article>
-)
+);
 
 Theme.propTypes = {
     image: PropTypes.object.isRequired,
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
     link: PropTypes.string.isRequired,
-}
+};
 
 export default Theme
