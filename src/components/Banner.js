@@ -5,7 +5,6 @@ import Background from '../img/banner.jpg';
 
 const sectionStyle = (background) => {
     background = background || Background;
-    console.log(background);
     return {backgroundImage: `url(${background})`}
 };
 
