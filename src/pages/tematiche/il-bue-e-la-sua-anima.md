@@ -2,7 +2,7 @@
 templateKey: theme-page
 orderIndex: 1
 title: il bue e la sua anima
-subtitle: 'grande maternità '
+subtitle: grande maternità
 intro_image: ../../img/il-bue-e-la-sua-anima.jpg
 works:
   - description: |-
