@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
 export const ThankyouPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
+  const PageContent = contentComponent || Content;
 
   return (
       <div>
@@ -23,13 +23,13 @@ export const ThankyouPageTemplate = ({ title, content, contentComponent }) => {
           </div>
       </div>
   )
-}
+};
 
 ThankyouPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-}
+};
 
 const ThankyouPage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -41,11 +41,11 @@ const ThankyouPage = ({ data }) => {
       content={post.html}
     />
   )
-}
+};
 
 ThankyouPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
 export default ThankyouPage
 
@@ -58,4 +58,4 @@ export const thankyouPageQuery = graphql`
       }
     }
   }
-`
+`;
