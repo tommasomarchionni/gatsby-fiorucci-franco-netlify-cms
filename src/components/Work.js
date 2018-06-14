@@ -7,10 +7,14 @@ const Work = ({ image, title, description, onClick }) =>  {
     return (
         <section>
             <a className="image" onClick={() => onClick({title, description})}>
-                <Img
-                    sizes={image.childImageSharp.sizes}
-                    alt={title}
-                />
+                {(typeof image !== 'string') ? (
+                    <Img
+                        sizes={image.childImageSharp.sizes}
+                        alt={title}
+                    />
+                ) : (
+                    <img src={image} />
+                )}
             </a>
             <div className="content">
                 <div className="inner">

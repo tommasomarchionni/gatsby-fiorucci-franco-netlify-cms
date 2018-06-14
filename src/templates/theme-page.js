@@ -55,7 +55,7 @@ export class ThemePageTemplate extends Component {
         const Lightbox = this.Lightbox;
         const images = this.props.works.map((work) => {
             return {
-                src: work.image.childImageSharp.sizes.src,
+                src: (typeof work.image !== 'string') ?  work.image.childImageSharp.sizes.src : work.image,
                 title: work.title,
                 description: work.description
             }
@@ -69,7 +69,7 @@ export class ThemePageTemplate extends Component {
                         {
                             this.props.works.map((work, index) => {
                                 return (
-                                    <Work key={work.image.childImageSharp.sizes.src}
+                                    <Work key={ (typeof work.image !== 'string') ? work.image.childImageSharp.sizes.src : work.image}
                                           image={work.image}
                                           title={work.title}
                                           description={this.parseMarkdown(work.description)}
