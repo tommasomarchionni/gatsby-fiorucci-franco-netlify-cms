@@ -13,7 +13,14 @@ const Work = ({ image, title, description, onClick }) =>  {
                         alt={title}
                     />
                 ) : (
-                    <img src={image} />
+                    <div className="gatsby-image-outer-wrapper" style={{position: 'relative'}}>
+                        <div className="gatsby-image-wrapper" style={{position: 'relative', overflow: 'hidden'}}>
+                            <div style={{width: '100%', paddingBottom: '77.39938080495355%' }} />
+                            <img src={image}
+                                style={{position: 'absolute', top: '0px', left: '0px', transition: 'opacity 0.5s', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center', opacity: 1}}
+                            />
+                        </div>
+                    </div>
                 )}
             </a>
             <div className="content">
