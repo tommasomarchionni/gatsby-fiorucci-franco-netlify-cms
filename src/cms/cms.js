@@ -7,6 +7,7 @@ import GenericPagePreview from './preview-templates/GenericPagePreview';
 import ThemePagePreview from './preview-templates/ThemePagePreview';
 import NotFoundPagePreview from './preview-templates/NotFoundPagePreview';
 import ThankYouPagePreview from './preview-templates/ThankYouPagePreview';
+import ContactPagePreview from './preview-templates/ContactPagePreview';
 
 // register it to be able tu use it in NetlifyCMS
 CMS.registerWidget("custompathimage", CustomPathImageControl, CustomPathImagePreview);
@@ -18,3 +19,4 @@ CMS.registerPreviewTemplate('pages', GenericPagePreview);
 CMS.registerPreviewTemplate('themes', ThemePagePreview);
 CMS.registerPreviewTemplate('notfound', NotFoundPagePreview);
 CMS.registerPreviewTemplate('thankyou', ThankYouPagePreview);
+CMS.registerPreviewTemplate('contacts', ContactPagePreview);

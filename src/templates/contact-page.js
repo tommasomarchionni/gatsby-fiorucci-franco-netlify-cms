@@ -22,14 +22,14 @@ export const ContactPageTemplate = ({
             <Contact email={email} telephone={telephone} address={address}/>
         </div>
     </div>
-)
+);
 
 ContactPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
   telephone: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
-}
+};
 
 const ContactPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
@@ -42,7 +42,7 @@ const ContactPage = ({ data }) => {
       address={frontmatter.address}
     />
   )
-}
+};
 
 ContactPage.propTypes = {
   data: PropTypes.shape({
@@ -50,7 +50,7 @@ ContactPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
 export default ContactPage
 
@@ -65,4 +65,4 @@ export const contactPageQuery = graphql`
       }
     }
   }
-`
+`;
