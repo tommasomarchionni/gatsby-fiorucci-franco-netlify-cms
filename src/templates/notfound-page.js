@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
 export const NotFoundPageTemplate = ({ title, content, contentComponent }) => {
-    const PageContent = contentComponent || Content
+    const PageContent = contentComponent || Content;
 
     return (
         <div>
@@ -23,13 +23,13 @@ export const NotFoundPageTemplate = ({ title, content, contentComponent }) => {
             </div>
         </div>
     )
-}
+};
 
 NotFoundPageTemplate.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string,
     contentComponent: PropTypes.func,
-}
+};
 
 const NotFoundPage = ({ data }) => {
     const { markdownRemark: post } = data
@@ -41,11 +41,11 @@ const NotFoundPage = ({ data }) => {
             content={post.html}
         />
     )
-}
+};
 
 NotFoundPage.propTypes = {
     data: PropTypes.object.isRequired,
-}
+};
 
 export default NotFoundPage
 
@@ -58,4 +58,4 @@ export const notFoundPageQuery = graphql`
       }
     }
   }
-`
+`;
