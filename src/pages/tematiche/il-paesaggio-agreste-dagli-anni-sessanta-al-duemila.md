@@ -26,5 +26,86 @@ works:
       cm. 45 x 60
     image: ../../img/non-disponibile.jpg
     title: Alto Montefeltro
+  - description: |-
+      olio (1968)\
+      68 x 58 cm
+    image: ../../img/non-disponibile.jpg
+    title: Ombre e luci
+  - description: |-
+      olio (1996)\
+      55 x 68 cm
+    image: ../../img/non-disponibile.jpg
+    title: Dal calanco
+  - description: |-
+      olio (1970)\
+      50 x 65 cm
+    image: ../../img/non-disponibile.jpg
+    title: Verso la notte
+  - description: |-
+      olio (1974)\
+      60 x 55 cm
+    image: ../../img/non-disponibile.jpg
+    title: La villa
+  - image: ../../img/non-disponibile.jpg
+    title: Le cesane
+  - description: |-
+      acquarello (1989)\
+      55 x 40 cm
+    image: ../../img/non-disponibile.jpg
+    title: Dai monti della luna
+  - description: |-
+      acquarello (1988)\
+      50 x 50 cm
+    image: ../../img/non-disponibile.jpg
+    title: La colombaia
+  - description: |-
+      acquarello (2008)\
+      65 x 65 cm
+    image: ../../img/non-disponibile.jpg
+    title: La casa rossa
+  - image: ../../img/non-disponibile.jpg
+    title: Le colombaie
+  - image: ../../img/non-disponibile.jpg
+    title: A pigna luna
+  - description: |-
+      acquarello, 1996\
+      cm. 18,5 x 23
+    image: ../../img/non-disponibile.jpg
+    title: Sopra il Metauro
+  - description: |-
+      acquarello, 1992\
+      cm. 48 x 60
+    image: ../../img/non-disponibile.jpg
+    title: La grande "tomba"
+  - description: |-
+      acquarello (1991)\
+      40 x 28 cm
+    image: ../../img/non-disponibile.jpg
+    title: La casa rossa
+  - description: |-
+      acquarello (1989)\
+      70 x 60 cm
+    image: ../../img/non-disponibile.jpg
+    title: Per memoria
+  - description: |-
+      acquarello (1982)\
+      45 x 40 cm
+    image: ../../img/non-disponibile.jpg
+    title: Campi di luce
+  - description: |-
+      acquarello (1989)\
+      40 x 50 cm
+    image: ../../img/non-disponibile.jpg
+    title: Alto Montefeltro
+  - description: |-
+      acquarello (1985)\
+      65 x 55 cm
+    image: ../../img/non-disponibile.jpg
+    title: Il parco
+  - description: |-
+      acquarello (2002)\
+      68 x 59 cm
+    image: ../../img/non-disponibile.jpg
+    title: Il risveglio
 ---
 
