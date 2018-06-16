@@ -2,7 +2,7 @@
 templateKey: theme-page
 orderIndex: 4
 title: il paesaggio agreste dagli anni sessanta al duemila
-intro_image: ../../img/non-disponibile.jpg
+intro_image: ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila.jpg
 works:
   - description: |-
       acquarello, 1969\
