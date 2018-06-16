@@ -10,5 +10,8 @@ works:
   - description: tempera (1969)
     image: ../../img/non-disponibile.jpg
     title: Requiem
+  - description: tecnica mista (1980)
+    image: ../../img/non-disponibile.jpg
+    title: Oratorio
 ---
 
