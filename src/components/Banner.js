@@ -8,11 +8,11 @@ const sectionStyle = (background) => {
     return {backgroundImage: `url(${background})`}
 };
 
-const Banner = ({pages, background}) => (
+const Banner = ({title, pages, background}) => (
     <section style={ sectionStyle(background) } id="banner" className="major">
         <div className="inner">
             <header className="major">
-                <h1>Fiorucci Franco</h1>
+                <h1>{title}</h1>
             </header>
             {pages.map(({ node: page }) => (
                 <div key={page.id} className="content">
@@ -38,7 +38,8 @@ Banner.propTypes = {
             }),
         }),
     ),
-    background: PropTypes.string
+    title: PropTypes.string.isRequired,
+    background: PropTypes.string,
 };
 
 export default Banner

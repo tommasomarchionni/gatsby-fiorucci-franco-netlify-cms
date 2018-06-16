@@ -4,58 +4,69 @@ import Content, { HTMLContent } from '../components/Content'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
-export const GenericPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
+export const GenericPageTemplate = ({ title, content, contentComponent, siteTitle }) => {
+    const PageContent = contentComponent || Content;
+    siteTitle = siteTitle || '';
 
-  return (
-      <div>
-          <Helmet>
-              <title>Franco Fiorucci</title>
-              <meta name="description" content={title} />
-          </Helmet>
+    return (
+        <div>
+            <Helmet>
+                <title>{`${title} - ${siteTitle}`}</title>
+                <meta name="description" content={title} />
+            </Helmet>
 
-          <BannerLanding title={title} />
+            <BannerLanding title={title} />
 
-          <div id="main">
-              <section id="one">
-                  <PageContent className="inner" content={content} />
-              </section>
-          </div>
-      </div>
-  )
+            <div id="main">
+                <section id="one">
+                    <PageContent className="inner" content={content} />
+                </section>
+            </div>
+        </div>
+    )
 };
 
 GenericPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string,
+    contentComponent: PropTypes.func,
+    siteTitle: PropTypes.string
 };
 
-const GenericPage = ({ data }) => {
-  const { markdownRemark: post } = data
+const GenericPage = ({ data: { site, genericPage } }) => {
+    const siteTitle = site.siteMetadata.title;
 
-  return (
-    <GenericPageTemplate
-      contentComponent={HTMLContent}
-      title={post.frontmatter.title}
-      content={post.html}
-    />
-  )
+    return (
+        <GenericPageTemplate
+          contentComponent={HTMLContent}
+          title={genericPage.frontmatter.title}
+          content={genericPage.html}
+          siteTitle={siteTitle}
+        />
+    )
 };
 
 GenericPage.propTypes = {
-  data: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired,
 };
 
 export default GenericPage
 
 export const genericPageQuery = graphql`
-  query GenericPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
+    query GenericPage($id: String!) {
+        # site info
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+        # get generic page
+        genericPage: markdownRemark(id: { eq: $id }) {
+            html 
+            frontmatter {
+                title
+            }
+        }
     }
-  }
 `;

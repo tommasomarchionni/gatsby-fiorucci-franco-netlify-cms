@@ -5,64 +5,77 @@ import BannerLanding from '../components/BannerLanding'
 import Contact from "../components/Contact";
 
 export const ContactPageTemplate = ({
-  title,
-  email,
-  telephone,
-  address,
-}) => (
-    <div>
-        <Helmet>
-            <title>Franco Fiorucci</title>
-            <meta name="description" content={title} />
-        </Helmet>
+    title,
+    email,
+    telephone,
+    address,
+    siteTitle
+}) => {
+    siteTitle = siteTitle || '';
+    return (
+        <div>
+            <Helmet>
+                <title>{`${title} - ${siteTitle}`}</title>
+                <meta name="description" content={title} />
+            </Helmet>
 
-        <BannerLanding title={title} />
+            <BannerLanding title={title} />
 
-        <div id="main">
-            <Contact email={email} telephone={telephone} address={address}/>
+            <div id="main">
+                <Contact email={email} telephone={telephone} address={address}/>
+            </div>
         </div>
-    </div>
-);
-
-ContactPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
-  telephone: PropTypes.string.isRequired,
-  address: PropTypes.string.isRequired,
+    );
 };
 
-const ContactPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+ContactPageTemplate.propTypes = {
+    title: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    telephone: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+    siteTitle: PropTypes.string
+};
 
-  return (
-    <ContactPageTemplate
-      title={frontmatter.title}
-      email={frontmatter.email}
-      telephone={frontmatter.telephone}
-      address={frontmatter.address}
-    />
-  )
+const ContactPage = ({ data: { site, contactPage } }) => {
+    const siteTitle = site.siteMetadata.title;
+    return (
+        <ContactPageTemplate
+          title={contactPage.frontmatter.title}
+          email={contactPage.frontmatter.email}
+          telephone={contactPage.frontmatter.telephone}
+          address={contactPage.frontmatter.address}
+          siteTitle={siteTitle}
+        />
+    )
 };
 
 ContactPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
+    data: PropTypes.shape({
+        markdownRemark: PropTypes.shape({
+            frontmatter: PropTypes.object,
+        }),
     }),
-  }),
 };
 
 export default ContactPage
 
 export const contactPageQuery = graphql`
-  query ContactPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      frontmatter {
-        title
-        email
-        telephone
-        address
-      }
+    query ContactPage($id: String!) {
+        # site info
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+        # get contact page
+        contactPage: markdownRemark(id: { eq: $id }) { 
+            frontmatter {
+                title
+                email
+                telephone
+                address
+            }
+        }
     }
-  }
 `;

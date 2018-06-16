@@ -51,7 +51,7 @@ class TemplateWrapper extends React.Component {
                 <div id="wrapper">
                     <Header onToggleMenu={this.handleToggleMenu} />
                     {children()}
-                    {contactPages.edges
+                    {this.props.location.pathname !== '/contatti/' && contactPages.edges
                         .map(({ node: contact }) => (
                             <Contact
                                 key={contact.id}
@@ -98,7 +98,7 @@ export const pageQuery = graphql`
                 description
             }
         }        
-        # get all generic-page        
+        # get all generic-page
         genericPages: allMarkdownRemark (
             sort: { order: ASC, fields: [frontmatter___orderIndex] }
             filter: {

@@ -4,13 +4,14 @@ import Content, { HTMLContent } from '../components/Content'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
-export const ThankyouPageTemplate = ({ title, content, contentComponent }) => {
+export const ThankyouPageTemplate = ({ title, content, contentComponent, siteTitle }) => {
   const PageContent = contentComponent || Content;
+  siteTitle = siteTitle || '';
 
   return (
       <div>
           <Helmet>
-              <title>Franco Fiorucci</title>
+              <title>{`${title} - ${siteTitle}`}</title>
               <meta name="description" content={title} />
           </Helmet>
 
@@ -26,36 +27,46 @@ export const ThankyouPageTemplate = ({ title, content, contentComponent }) => {
 };
 
 ThankyouPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string,
+    contentComponent: PropTypes.func,
+    siteTitle: PropTypes.string,
 };
 
-const ThankyouPage = ({ data }) => {
-  const { markdownRemark: post } = data
+const ThankyouPage = ({ data: { site, thankYouPage } }) => {
+    const siteTitle = site.siteMetadata.title;
 
-  return (
-    <ThankyouPageTemplate
-      contentComponent={HTMLContent}
-      title={post.frontmatter.title}
-      content={post.html}
-    />
-  )
+    return (
+        <ThankyouPageTemplate
+          contentComponent={HTMLContent}
+          title={thankYouPage.frontmatter.title}
+          content={thankYouPage.html}
+          siteTitle={siteTitle}
+        />
+    )
 };
 
 ThankyouPage.propTypes = {
-  data: PropTypes.object.isRequired,
+    data: PropTypes.object.isRequired,
 };
 
 export default ThankyouPage
 
 export const thankyouPageQuery = graphql`
-  query ThankyouPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
+    query ThankYouPage($id: String!) {
+        # site info
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+        # get thank you page
+        thankYouPage: markdownRemark(id: { eq: $id }) {
+            html 
+            frontmatter {
+                title
+            }
+        }
     }
-  }
 `;

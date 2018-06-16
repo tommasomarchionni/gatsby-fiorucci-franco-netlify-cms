@@ -7,9 +7,9 @@ import 'react-image-lightbox/style.css';
 import remark from "remark";
 import styleGuide from 'remark-preset-lint-markdown-style-guide';
 import remarkHtml from 'remark-html';
+import Helmet from 'react-helmet'
 
 export class ThemePageTemplate extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -63,6 +63,11 @@ export class ThemePageTemplate extends Component {
 
         return (
             <div>
+                <Helmet>
+                    <title>{`${this.props.title} - ${this.props.siteTitle}`}</title>
+                    <meta name="description" content={this.props.title} />
+                </Helmet>
+
                 <BannerLanding title={this.props.title} subtitle={this.props.subtitle} background={this.props.introImage}/>
                 <div id="main">
                     <section id="two" className="spotlights">
@@ -111,59 +116,69 @@ export class ThemePageTemplate extends Component {
 }
 
 ThemePageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string,
-  introImage: PropTypes.string,
-  works: PropTypes.array,
-}
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
+    introImage: PropTypes.string,
+    works: PropTypes.array,
+    siteTitle: PropTypes.string
+};
 
-const ThemePage = ({ data }) => {
-  const { markdownRemark: theme } = data
-  return (
-    <ThemePageTemplate
-      title={theme.frontmatter.title}
-      subtitle={theme.frontmatter.subtitle}
-      introImage={theme.frontmatter.intro_image.childImageSharp.sizes.src}
-      works={theme.frontmatter.works}
-    />
-  )
+const ThemePage = ({ data: { site, themePage } }) => {
+    const siteTitle = site.siteMetadata.title;
+    return (
+        <ThemePageTemplate
+          title={themePage.frontmatter.title}
+          subtitle={themePage.frontmatter.subtitle}
+          introImage={themePage.frontmatter.intro_image.childImageSharp.sizes.src}
+          works={themePage.frontmatter.works}
+          siteTitle={siteTitle}
+        />
+    )
 };
 
 ThemePage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
+    data: PropTypes.shape({
+        markdownRemark: PropTypes.object,
+    }),
 };
 
 export default ThemePage
 
 export const pageQuery = graphql`
-  query ThemePageByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        title
-        subtitle
-        intro_image {
-            childImageSharp{
-              sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
-              }
+    query ThemePageByID($id: String!) {
+        # site info
+        site {
+            siteMetadata {
+                title
+                description
             }
         }
-        works {
-          image {
-            childImageSharp{
-              sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
-              }
+        # get theme page
+        themePage: markdownRemark(id: { eq: $id }) {
+            id
+            html 
+            frontmatter {
+                title
+                subtitle
+                intro_image {
+                    childImageSharp{
+                        sizes(maxWidth: 800) {
+                            ...GatsbyImageSharpSizes
+                        }
+                    }
+                }
+                works {
+                    image {
+                        childImageSharp{
+                            sizes(maxWidth: 800) {
+                                ...GatsbyImageSharpSizes
+                            }
+                        }
+                    }
+                    title
+                    description  
+                }
             }
-          }
-          title
-          description  
         }
-      }
     }
-  }
 `;

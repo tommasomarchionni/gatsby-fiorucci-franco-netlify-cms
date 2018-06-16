@@ -2,13 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Banner from '../components/Banner'
 import Theme from '../components/Theme'
+import Helmet from 'react-helmet'
 
 export default class IndexPage extends React.Component {
     render() {
-        const { data: { themePages, genericPages } } = this.props;
+        const { data: { themePages, genericPages, site } } = this.props;
+        const siteTitle = site.siteMetadata.title;
         return (
             <div>
-                <Banner pages={genericPages.edges} />
+                <Helmet>
+                    <title>{`Home - ${siteTitle}`}</title>
+                    <meta name="description" content={'Home'} />
+                </Helmet>
+                <Banner title={siteTitle} pages={genericPages.edges} />
                 <div id="main">
                     <section id="one" className="tiles" >
                         {themePages.edges
@@ -35,12 +41,20 @@ IndexPage.propTypes = {
         }),
         genericPages: PropTypes.shape({
             edges: PropTypes.array,
-        })
+        }),
+        site: PropTypes.object
     })
 };
 
 export const pageQuery = graphql`
     query IndexQuery {
+        # site info
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }        
         # get all generic-page        
         genericPages: allMarkdownRemark (
             sort: { order: ASC, fields: [frontmatter___orderIndex] }

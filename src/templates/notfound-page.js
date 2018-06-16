@@ -4,13 +4,14 @@ import Content, { HTMLContent } from '../components/Content'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
-export const NotFoundPageTemplate = ({ title, content, contentComponent }) => {
+export const NotFoundPageTemplate = ({ title, content, contentComponent, siteTitle }) => {
     const PageContent = contentComponent || Content;
+    siteTitle = siteTitle || '';
 
     return (
         <div>
             <Helmet>
-                <title>Franco Fiorucci</title>
+                <title>{`${title} - ${siteTitle}`}</title>
                 <meta name="description" content={title} />
             </Helmet>
 
@@ -29,16 +30,17 @@ NotFoundPageTemplate.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string,
     contentComponent: PropTypes.func,
+    siteTitle: PropTypes.string
 };
 
-const NotFoundPage = ({ data }) => {
-    const { markdownRemark: post } = data
-
+const NotFoundPage = ({ data: { site, notFoundPage } }) => {
+    const siteTitle = site.siteMetadata.title;
     return (
         <NotFoundPageTemplate
             contentComponent={HTMLContent}
-            title={post.frontmatter.title}
-            content={post.html}
+            title={notFoundPage.frontmatter.title}
+            content={notFoundPage.html}
+            siteTitle={siteTitle}
         />
     )
 };
@@ -50,12 +52,20 @@ NotFoundPage.propTypes = {
 export default NotFoundPage
 
 export const notFoundPageQuery = graphql`
-  query notFoundPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
+    query notFoundPage($id: String!) {
+        # site info
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+        # get not found page
+        notFoundPage: markdownRemark(id: { eq: $id }) {
+            html 
+            frontmatter {
+                title
+            }
+        }
     }
-  }
 `;
