@@ -107,5 +107,39 @@ works:
       68 x 59 cm
     image: ../../img/non-disponibile.jpg
     title: Il risveglio
+  - description: |-
+      acquarello (2005)\
+      20 x 30 cm
+    image: ../../img/non-disponibile.jpg
+    title: Verso il calanco
+  - description: |-
+      acquarello (2006)\
+      12 x 28 cm
+    image: ../../img/non-disponibile.jpg
+    title: Luce aperta
+  - image: ../../img/non-disponibile.jpg
+    title: Sottobosco
+  - image: ../../img/non-disponibile.jpg
+    title: La casa rossa
+  - description: |-
+      acquarello (2001)\
+      12 x 18 cm
+    image: ../../img/non-disponibile.jpg
+    title: Luci in collina
+  - description: |-
+      acquarello (2001)\
+      15 x 15 cm
+    image: ../../img/non-disponibile.jpg
+    title: Sotto la collina
+  - description: |-
+      acquarello (1998)\
+      20 x 20 cm
+    image: ../../img/non-disponibile.jpg
+    title: Verso l'altopiano
+  - description: |-
+      acquarello (1998)\
+      25 x 17 cm
+    image: ../../img/non-disponibile.jpg
+    title: Sul colle
 ---
 
