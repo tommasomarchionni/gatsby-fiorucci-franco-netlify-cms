@@ -16,7 +16,8 @@ works:
     image: >-
       ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_sotto-il-crinale.jpg
     title: Sotto il crinale
-  - image: ../../img/non-disponibile.jpg
+  - image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_alto-calanco.jpg
     title: Alto calanco
   - description: |-
       acquarello, 2001\
