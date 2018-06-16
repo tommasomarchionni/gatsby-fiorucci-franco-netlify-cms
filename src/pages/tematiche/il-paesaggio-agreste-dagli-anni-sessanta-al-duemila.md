@@ -34,7 +34,8 @@ works:
   - description: |-
       olio (1968)\
       68 x 58 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_ombre-e-luci.jpg
     title: Ombre e luci
   - description: |-
       olio (1996)\
