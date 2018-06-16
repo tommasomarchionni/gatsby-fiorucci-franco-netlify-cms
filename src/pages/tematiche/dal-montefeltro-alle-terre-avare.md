@@ -65,7 +65,7 @@ works:
   - description: |-
       tecnica mista (1980)\
       70 x 60 cm
-    image: ../../img/dal-montefeltro-alle-terre-avare-dentro-la-stalla.jpg
+    image: ../../img/dal-montefeltro-alle-terre-avare_dentro-la-stalla.jpg
     title: Dentro la stalla
   - description: |-
       acquarello (1988)\
