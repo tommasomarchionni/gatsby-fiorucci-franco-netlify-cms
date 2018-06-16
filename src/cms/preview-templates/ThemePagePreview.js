@@ -13,7 +13,7 @@ const ThemePagePreview = ({ entry, fields }) => {
                 subtitle={entry.getIn(['data', 'subtitle'])}
                 introImage={entry.getIn(['data', 'intro_image']).replace('../../img/', rawMediaPath)}
                 works={works.map((work) => {
-                    work.image =  work.image.replace('../../img/', rawMediaPath);
+                    work.image =  work.image ? work.image.replace('../../img/', rawMediaPath) : '';
                     return work;
                 })}
             />
