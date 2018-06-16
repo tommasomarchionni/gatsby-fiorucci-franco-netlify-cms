@@ -7,7 +7,8 @@ works:
   - description: |-
       acquarello, 1969\
       cm. 12 x 18
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_case-al-sole.jpg
     title: Case al sole
   - description: |-
       acquarello, 1973\
