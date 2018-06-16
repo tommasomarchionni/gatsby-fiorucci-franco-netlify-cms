@@ -93,7 +93,7 @@ works:
     image: ../../img/dal-montefeltro-alle-terre-avare_verso-sera.jpg
     title: Verso sera
   - description: acquarello (1998)
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/dal-montefeltro-alle-terre-avare_il-pasto.jpg
     title: Il pasto
   - description: |-
       gouche (1997)\
