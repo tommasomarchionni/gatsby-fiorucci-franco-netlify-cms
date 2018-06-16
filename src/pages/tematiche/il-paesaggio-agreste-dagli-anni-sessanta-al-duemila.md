@@ -13,7 +13,8 @@ works:
   - description: |-
       acquarello, 1973\
       cm. 17 x 30
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_sotto-il-crinale.jpg
     title: Sotto il crinale
   - image: ../../img/non-disponibile.jpg
     title: Alto calanco
