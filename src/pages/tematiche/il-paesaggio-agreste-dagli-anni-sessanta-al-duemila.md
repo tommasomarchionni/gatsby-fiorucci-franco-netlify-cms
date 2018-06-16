@@ -28,12 +28,14 @@ works:
   - description: |-
       acquarello, 2001\
       cm. 45 x 60
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_alto-montefeltro-2.jpg
     title: Alto Montefeltro
   - description: |-
       olio (1968)\
       68 x 58 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_ombre-e-luci.jpg
     title: Ombre e luci
   - description: |-
       olio (1996)\
