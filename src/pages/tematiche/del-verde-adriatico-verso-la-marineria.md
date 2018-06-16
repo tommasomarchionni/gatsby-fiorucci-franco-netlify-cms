@@ -85,6 +85,7 @@ works:
   - description: |-
       tecniche miste (2007)\
       23 x 18 cm
+    image: ../../img/non-disponibile.jpg
     title: La darsena
   - description: |-
       gouche (1985)\
@@ -96,6 +97,7 @@ works:
   - description: |-
       gouche (2011)\
       22 x 18 cm
+    image: ../../img/non-disponibile.jpg
     title: Sotto il S.Bartolo
   - description: |-
       gouche (2001)\
