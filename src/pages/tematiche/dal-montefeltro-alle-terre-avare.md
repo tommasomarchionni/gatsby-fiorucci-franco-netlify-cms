@@ -98,7 +98,7 @@ works:
   - description: |-
       gouche (1997)\
       50 x 35 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/dal-montefeltro-alle-terre-avare_quelli-delle-terre-crude.jpg
     title: Quelli delle terre crude
 ---
 
