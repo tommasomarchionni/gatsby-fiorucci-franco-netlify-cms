@@ -40,7 +40,8 @@ works:
   - description: |-
       olio (1996)\
       55 x 68 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_dal-calanco.jpg
     title: Dal calanco
   - description: |-
       olio (1970)\
