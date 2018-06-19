@@ -138,29 +138,35 @@ works:
     image: >-
       ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_luce-aperta.jpg
     title: Luce aperta
-  - image: ../../img/non-disponibile.jpg
+  - image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_sottobosco.jpg
     title: Sottobosco
-  - image: ../../img/non-disponibile.jpg
+  - image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_la-casa-rossa-3.jpg
     title: La casa rossa
   - description: |-
       acquarello (2001)\
       12 x 18 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_luci-in-collina.jpg
     title: Luci in collina
   - description: |-
       acquarello (2001)\
       15 x 15 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_sotto-la-collina.jpg
     title: Sotto la collina
   - description: |-
       acquarello (1998)\
       20 x 20 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_verso-l-altopiano.jpg
     title: Verso l'altopiano
   - description: |-
       acquarello (1998)\
       25 x 17 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_sul-colle.jpg
     title: Sul colle
 ---
 
