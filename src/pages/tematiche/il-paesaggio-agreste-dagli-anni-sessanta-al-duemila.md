@@ -102,7 +102,8 @@ works:
   - description: |-
       acquarello (1989)\
       70 x 60 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_per-memoria.jpg
     title: Per memoria
   - description: |-
       acquarello (1982)\
@@ -117,17 +118,19 @@ works:
   - description: |-
       acquarello (1985)\
       65 x 55 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_il-parco.jpg
     title: Il parco
   - description: |-
       acquarello (2002)\
       68 x 59 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_il-risveglio.jpg
     title: Il risveglio
   - description: |-
       acquarello (2005)\
       20 x 30 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_verso-il-calanco.jpg
     title: Verso il calanco
   - description: |-
       acquarello (2006)\
