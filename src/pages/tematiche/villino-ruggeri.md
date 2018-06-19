@@ -2,15 +2,15 @@
 templateKey: theme-page
 orderIndex: 5
 title: villino ruggeri
-intro_image: ../../img/non-disponibile.jpg
+intro_image: ../../img/villino-ruggeri.jpg
 works:
-  - image: ../../img/non-disponibile.jpg
+  - image: ../../img/villino-ruggeri_villino-ruggeri-1.jpg
     title: Villino ruggeri
-  - image: ../../img/non-disponibile.jpg
+  - image: ../../img/villino-ruggeri_villino-ruggeri-2.jpg
     title: Villino ruggeri
-  - image: ../../img/non-disponibile.jpg
+  - image: ../../img/villino-ruggeri_villino-ruggeri-3.jpg
     title: Villino ruggeri
-  - image: ../../img/non-disponibile.jpg
+  - image: ../../img/villino-ruggeri_villino-ruggeri-4.jpg
     title: Villino ruggeri
 ---
 
