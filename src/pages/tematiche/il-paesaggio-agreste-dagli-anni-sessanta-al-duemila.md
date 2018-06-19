@@ -96,7 +96,8 @@ works:
   - description: |-
       acquarello (1991)\
       40 x 28 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_la-casa-rossa-2.jpg
     title: La casa rossa
   - description: |-
       acquarello (1989)\
