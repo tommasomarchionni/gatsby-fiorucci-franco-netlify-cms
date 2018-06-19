@@ -46,43 +46,52 @@ works:
   - description: |-
       olio (1970)\
       50 x 65 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_verso-la-notte.jpg
     title: Verso la notte
   - description: |-
       olio (1974)\
       60 x 55 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_la-villa.jpg
     title: La villa
-  - image: ../../img/non-disponibile.jpg
+  - image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_le-cesane.jpg
     title: Le cesane
   - description: |-
       acquarello (1989)\
       55 x 40 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_dai-monti-della-luna.jpg
     title: Dai monti della luna
   - description: |-
       acquarello (1988)\
       50 x 50 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_la-colombaia.jpg
     title: La colombaia
   - description: |-
       acquarello (2008)\
       65 x 65 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_la-casa-rossa.jpg
     title: La casa rossa
-  - image: ../../img/non-disponibile.jpg
+  - image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_le-colombaie.jpg
     title: Le colombaie
-  - image: ../../img/non-disponibile.jpg
+  - image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_a-pigna-luna.jpg
     title: A pigna luna
   - description: |-
       acquarello, 1996\
       cm. 18,5 x 23
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_sopra-il-metauro.jpg
     title: Sopra il Metauro
   - description: |-
       acquarello, 1992\
       cm. 48 x 60
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_la-grande-tomba.jpg
     title: La grande "tomba"
   - description: |-
       acquarello (1991)\
