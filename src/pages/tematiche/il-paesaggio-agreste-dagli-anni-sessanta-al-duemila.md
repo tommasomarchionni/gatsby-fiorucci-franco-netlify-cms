@@ -135,7 +135,8 @@ works:
   - description: |-
       acquarello (2006)\
       12 x 28 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_luce-aperta.jpg
     title: Luce aperta
   - image: ../../img/non-disponibile.jpg
     title: Sottobosco
