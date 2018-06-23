@@ -72,51 +72,52 @@ works:
   - description: |-
       acquarello (1994)\
       10 x 15 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/del-verde-adriatico-verso-la-marineria_verso-il-largo.jpg
     title: Verso il largo
   - description: |-
       gouche (2006)\
       40 x 25 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/del-verde-adriatico-verso-la-marineria_la-calata.jpg
     title: La calata
   - description: tecniche miste (2006)
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/del-verde-adriatico-verso-la-marineria_verso-il-molo.jpg
     title: Verso il molo
   - description: |-
       tecniche miste (2007)\
       23 x 18 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/del-verde-adriatico-verso-la-marineria_la-darsena.jpg
     title: La darsena
   - description: |-
       gouche (1985)\
       35 x 19 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/del-verde-adriatico-verso-la-marineria_calafati-3.jpg
     title: Calafati
-  - image: ../../img/non-disponibile.jpg
+  - image: ../../img/del-verde-adriatico-verso-la-marineria_marina-a-sera.jpg
     title: Marina a sera
   - description: |-
       gouche (2011)\
       22 x 18 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/del-verde-adriatico-verso-la-marineria_sotto-il-s-bartolo.jpg
     title: Sotto il S.Bartolo
   - description: |-
       gouche (2001)\
       25 x 25 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/del-verde-adriatico-verso-la-marineria_verso-la-crociera.jpg
     title: Verso la crociera
-  - image: ../../img/non-disponibile.jpg
+  - image: ../../img/del-verde-adriatico-verso-la-marineria_lo-squero.jpg
     title: Lo squero
-  - image: ../../img/non-disponibile.jpg
+  - image: ../../img/del-verde-adriatico-verso-la-marineria_a-tutta-luce.jpg
     title: A tutta luce
   - description: |-
       acquarello (2007)\
       16 x 16 cm
-    image: ../../img/non-disponibile.jpg
+    image: ../../img/del-verde-adriatico-verso-la-marineria_plenilunio.jpg
     title: Plenilunio
   - description: |-
       acquarello (2007)\
       16 x 16 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/del-verde-adriatico-verso-la-marineria_sotto-il-corso-delle-lune.jpg
     title: Sotto il corso delle lune
 ---
 
