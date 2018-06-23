@@ -108,12 +108,14 @@ works:
   - description: |-
       acquarello (1982)\
       45 x 40 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_campi-di-luce.jpg
     title: Campi di luce
   - description: |-
       acquarello (1989)\
       40 x 50 cm
-    image: ../../img/non-disponibile.jpg
+    image: >-
+      ../../img/il-paesaggio-agreste-dagli-anni-sessanta-al-duemila_alto-montefeltro-3.jpg
     title: Alto Montefeltro
   - description: |-
       acquarello (1985)\
