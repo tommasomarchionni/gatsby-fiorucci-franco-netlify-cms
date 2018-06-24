@@ -9,7 +9,8 @@ export const ContactPageTemplate = ({
     email,
     telephone,
     address,
-    siteTitle
+    siteTitle,
+    preview
 }) => {
     siteTitle = siteTitle || '';
     return (
@@ -19,7 +20,7 @@ export const ContactPageTemplate = ({
                 <meta name="description" content={title} />
             </Helmet>
 
-            <BannerLanding title={title} />
+            <BannerLanding title={title} preview={preview} />
 
             <div id="main">
                 <Contact email={email} telephone={telephone} address={address}/>
@@ -33,7 +34,8 @@ ContactPageTemplate.propTypes = {
     email: PropTypes.string.isRequired,
     telephone: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
-    siteTitle: PropTypes.string
+    siteTitle: PropTypes.string,
+    preview: PropTypes.bool
 };
 
 const ContactPage = ({ data: { site, contactPage } }) => {

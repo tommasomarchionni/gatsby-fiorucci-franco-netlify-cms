@@ -9,6 +9,7 @@ const ContactPagePreview = ({ entry }) => (
             email={entry.getIn(['data', 'email'])}
             telephone={entry.getIn(['data', 'telephone'])}
             address={entry.getIn(['data', 'address'])}
+            preview={true}
         />
     </div>
 );
