@@ -7,6 +7,7 @@ const ThankYouPagePreview = ({ entry, widgetFor }) => (
         <ThankyouPageTemplate
             title={entry.getIn(['data', 'title'])}
             content={widgetFor('body')}
+            preview={true}
         />
     </div>
 );

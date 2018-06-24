@@ -4,7 +4,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
-export const ThankyouPageTemplate = ({ title, content, contentComponent, siteTitle }) => {
+export const ThankyouPageTemplate = ({ title, content, contentComponent, siteTitle, preview }) => {
   const PageContent = contentComponent || Content;
   siteTitle = siteTitle || '';
 
@@ -15,7 +15,7 @@ export const ThankyouPageTemplate = ({ title, content, contentComponent, siteTit
               <meta name="description" content={title} />
           </Helmet>
 
-          <BannerLanding title={title} />
+          <BannerLanding title={title} preview={preview} />
 
           <div id="main">
               <section id="one">
@@ -31,6 +31,7 @@ ThankyouPageTemplate.propTypes = {
     content: PropTypes.string,
     contentComponent: PropTypes.func,
     siteTitle: PropTypes.string,
+    preview: PropTypes.bool
 };
 
 const ThankyouPage = ({ data: { site, thankYouPage } }) => {
