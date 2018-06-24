@@ -4,7 +4,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
-export const GenericPageTemplate = ({ title, content, contentComponent, siteTitle }) => {
+export const GenericPageTemplate = ({ title, content, contentComponent, siteTitle, preview }) => {
     const PageContent = contentComponent || Content;
     siteTitle = siteTitle || '';
 
@@ -15,7 +15,7 @@ export const GenericPageTemplate = ({ title, content, contentComponent, siteTitl
                 <meta name="description" content={title} />
             </Helmet>
 
-            <BannerLanding title={title} />
+            <BannerLanding title={title} preview={preview} />
 
             <div id="main">
                 <section id="one">
@@ -30,7 +30,8 @@ GenericPageTemplate.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string,
     contentComponent: PropTypes.func,
-    siteTitle: PropTypes.string
+    siteTitle: PropTypes.string,
+    preview: PropTypes.bool
 };
 
 const GenericPage = ({ data: { site, genericPage } }) => {
