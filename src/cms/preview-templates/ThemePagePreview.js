@@ -16,6 +16,7 @@ const ThemePagePreview = ({ entry, fields }) => {
                     work.image =  work.image ? work.image.replace('../../img/', rawMediaPath) : '';
                     return work;
                 })}
+                preview={true}
             />
         </div>
     );

@@ -68,7 +68,7 @@ export class ThemePageTemplate extends Component {
                     <meta name="description" content={this.props.title} />
                 </Helmet>
 
-                <BannerLanding title={this.props.title} subtitle={this.props.subtitle} background={this.props.introImage}/>
+                <BannerLanding title={this.props.title} subtitle={this.props.subtitle} preview={this.props.preview} background={this.props.introImage}/>
                 <div id="main">
                     <section id="two" className="spotlights">
                         {
@@ -120,7 +120,8 @@ ThemePageTemplate.propTypes = {
     subtitle: PropTypes.string,
     introImage: PropTypes.string,
     works: PropTypes.array,
-    siteTitle: PropTypes.string
+    siteTitle: PropTypes.string,
+    preview: PropTypes.bool
 };
 
 const ThemePage = ({ data: { site, themePage } }) => {
