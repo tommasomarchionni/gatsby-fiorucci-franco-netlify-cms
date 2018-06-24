@@ -4,7 +4,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
-export const NotFoundPageTemplate = ({ title, content, contentComponent, siteTitle }) => {
+export const NotFoundPageTemplate = ({ title, content, contentComponent, siteTitle, preview }) => {
     const PageContent = contentComponent || Content;
     siteTitle = siteTitle || '';
 
@@ -15,7 +15,7 @@ export const NotFoundPageTemplate = ({ title, content, contentComponent, siteTit
                 <meta name="description" content={title} />
             </Helmet>
 
-            <BannerLanding title={title} />
+            <BannerLanding title={title} preview={preview} />
 
             <div id="main">
                 <section id="one">
@@ -30,7 +30,8 @@ NotFoundPageTemplate.propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string,
     contentComponent: PropTypes.func,
-    siteTitle: PropTypes.string
+    siteTitle: PropTypes.string,
+    preview: PropTypes.bool
 };
 
 const NotFoundPage = ({ data: { site, notFoundPage } }) => {

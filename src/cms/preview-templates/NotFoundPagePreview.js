@@ -7,6 +7,7 @@ const NotFoundPagePreview = ({ entry, widgetFor }) => (
         <NotFoundPageTemplate
             title={entry.getIn(['data', 'title'])}
             content={widgetFor('body')}
+            preview={true}
         />
     </div>
 );
