@@ -40,7 +40,7 @@ const Contact = ({
                     <div className="contact-method">
                         <FontAwesomeIcon className="icon alt" transform={'shrink-10' } mask={FaCircle} icon={FaEnvelope} />
                         <h3>Email</h3>
-                        <a href="#">{email}</a>
+                        <a href={`mailto:${email}`}>{email}</a>
                     </div>
                 </section>
                 <section>
@@ -60,12 +60,12 @@ const Contact = ({
             </section>
         </div>
     </section>
-)
+);
 
 Contact.propTypes = {
     email: PropTypes.string.isRequired,
     telephone: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
-}
+};
 
 export default Contact
