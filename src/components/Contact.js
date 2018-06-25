@@ -10,6 +10,7 @@ const Contact = ({
     email,
     telephone,
     address,
+    cellular
 }) => (
     <section id="contact">
         <hr/>
@@ -47,7 +48,8 @@ const Contact = ({
                     <div className="contact-method">
                         <FontAwesomeIcon className="icon alt" transform={'shrink-10 flip-h ' } mask={FaCircle} icon={FaPhone} />
                         <h3>Telefono</h3>
-                        <span>{telephone}</span>
+                        <div>{telephone}</div>
+                        { cellular ? <div>{cellular}</div> : ''}
                     </div>
                 </section>
                 <section>
@@ -65,6 +67,7 @@ const Contact = ({
 Contact.propTypes = {
     email: PropTypes.string.isRequired,
     telephone: PropTypes.string.isRequired,
+    cellular: PropTypes.string,
     address: PropTypes.string.isRequired,
 };
 

@@ -57,6 +57,7 @@ class TemplateWrapper extends React.Component {
                                 key={contact.id}
                                 email={contact.frontmatter.email}
                                 telephone={contact.frontmatter.telephone}
+                                cellular={contact.frontmatter.cellular}
                                 address={contact.frontmatter.address} />
                         ))
                         .pop()}
@@ -133,6 +134,7 @@ export const pageQuery = graphql`
                     frontmatter {
                         email
                         telephone
+                        cellular
                         address
                     }
                 }

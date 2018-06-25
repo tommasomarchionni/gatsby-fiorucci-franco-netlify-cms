@@ -45,6 +45,7 @@ const ContactPage = ({ data: { site, contactPage } }) => {
           title={contactPage.frontmatter.title}
           email={contactPage.frontmatter.email}
           telephone={contactPage.frontmatter.telephone}
+          cellular={contactPage.frontmatter.cellular}
           address={contactPage.frontmatter.address}
           siteTitle={siteTitle}
         />
@@ -76,6 +77,7 @@ export const contactPageQuery = graphql`
                 title
                 email
                 telephone
+                cellular
                 address
             }
         }
