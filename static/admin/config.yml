@@ -17,7 +17,7 @@ collections:
       - {label: "Titolo", name: "title", widget: "string"}
       - {label: "Sottotitolo", name: "subtitle", widget: "string", required: false}
       - {label: "Immagine iniziale", name: "intro_image", widget: "custompathimage", customMediaPath: "../../img/", rawMediaPath: "https://raw.githubusercontent.com/tommasomarchionni/gatsby-fiorucci-franco-netlify-cms/master/src/img/"}
-      - {label: "Introduzione", name: "intro_text", widget: "markdown", required: false}
+      - {label: "Introduzione", name: "body", widget: "markdown", required: false}
       - {label: "Opere", name: "works", widget: "list", fields: [{label: "Titolo", name: "title", widget: "string"}, {label: "Descrizione", name: "description", widget: "markdown", required: false}, {label: "Immagine", name: "image", required: true, widget: "custompathimage", customMediaPath: "../../img/", rawMediaPath: "https://raw.githubusercontent.com/tommasomarchionni/gatsby-fiorucci-franco-netlify-cms/master/src/img/"}]}
 
   - name: "pages"

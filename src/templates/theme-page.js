@@ -8,6 +8,7 @@ import remark from "remark";
 import styleGuide from 'remark-preset-lint-markdown-style-guide';
 import remarkHtml from 'remark-html';
 import Helmet from 'react-helmet'
+import {HTMLContent} from "../components/Content";
 
 export class ThemePageTemplate extends Component {
     constructor(props) {
@@ -51,6 +52,7 @@ export class ThemePageTemplate extends Component {
     };
 
     render() {
+        console.log(this.props);
         const { photoIndex, isOpen } = this.state;
         const Lightbox = this.Lightbox;
         const images = this.props.works.map((work) => {
@@ -70,6 +72,13 @@ export class ThemePageTemplate extends Component {
 
                 <BannerLanding title={this.props.title} subtitle={this.props.subtitle} preview={this.props.preview} background={this.props.introImage}/>
                 <div id="main">
+                    {
+                        this.props.introText ?
+                            (<section id="one">
+                                <HTMLContent className="inner" content={this.props.introText} />
+                            </section>) :
+                            ''
+                    }
                     <section id="two" className="spotlights">
                         {
                             this.props.works.map((work, index) => {
@@ -119,6 +128,7 @@ ThemePageTemplate.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
     introImage: PropTypes.string,
+    introText: PropTypes.string,
     works: PropTypes.array,
     siteTitle: PropTypes.string,
     preview: PropTypes.bool
@@ -130,6 +140,7 @@ const ThemePage = ({ data: { site, themePage } }) => {
         <ThemePageTemplate
           title={themePage.frontmatter.title}
           subtitle={themePage.frontmatter.subtitle}
+          introText={themePage.html}
           introImage={themePage.frontmatter.intro_image.childImageSharp.sizes.src}
           works={themePage.frontmatter.works}
           siteTitle={siteTitle}

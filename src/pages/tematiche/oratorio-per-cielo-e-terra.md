@@ -6,11 +6,6 @@ subtitle: >-
   tracce d'eterno, racconti della passione 2010 -2012, chiesa del cristo risorto
   - pesaro
 intro_image: ../../img/oratorio-per-cielo-e-terra.jpg
-intro_text: >-
-  Per una visione completa delle opere "I racconti della Passione" recarsi al
-  sito della Parrocchia di Cristo Risorto di Pesaro nella sezione Galleria Foto:
-  la cappella feriale cliccando
-  [qui](http://www.cristorisortopesaro.it/GallerieFoto/CappellaFeriale.htm).
 works:
   - description: tempera (1969)
     image: ../../img/oratorio-per-cielo-e-terra_requiem.jpg
@@ -47,4 +42,4 @@ works:
   - image: ../../img/oratorio-per-cielo-e-terra_resurrezione.jpg
     title: Resurrezione
 ---
-
+Per una visione completa delle opere "I racconti della Passione" recarsi al sito della Parrocchia di Cristo Risorto di Pesaro nella sezione Gallerie Foto, La cappella feriale cliccando [qui](http://www.cristorisortopesaro.it/GallerieFoto/CappellaFeriale.htm).
