@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Fiorucci Franco',
     author: 'Tommaso Marchionni',
-    description: 'Franco Fiorucci Website.'
+    description: 'Franco Fiorucci Website.',
+    siteUrl: 'https://www.fioruccifranco.it'
   },
   pathPrefix: '/',
   plugins: [
@@ -62,6 +63,12 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ['/thanks', '/not-found']
+      }
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
-  ],
-}
+  ]
+};
