@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Fiorucci Franco',
     author: 'Tommaso Marchionni',
-    description: 'Franco Fiorucci Website.',
+    description: 'Franco Fiorucci Website',
     siteUrl: 'https://www.fioruccifranco.it'
   },
   pathPrefix: '/',

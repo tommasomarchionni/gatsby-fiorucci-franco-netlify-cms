@@ -3,16 +3,32 @@ import PropTypes from 'prop-types'
 import Banner from '../components/Banner'
 import Theme from '../components/Theme'
 import Helmet from 'react-helmet'
+import Background from '../img/banner.jpg';
 
 export default class IndexPage extends React.Component {
     render() {
         const { data: { themePages, genericPages, site } } = this.props;
         const siteTitle = site.siteMetadata.title;
+        const siteUrl = site.siteMetadata.siteUrl;
+        const siteDescription = site.siteMetadata.description;
         return (
             <div>
                 <Helmet>
                     <title>{`Home - ${siteTitle}`}</title>
-                    <meta name="description" content={'Home'} />
+                    {/* General tags */}
+                    <meta name="description" content={siteDescription} />
+                    <meta name="image" content={Background} />
+
+                    {/* OpenGraph tags */}
+                    <meta property="og:url" content={siteUrl} />
+                    <meta property="og:title" content={siteTitle} />
+                    <meta property="og:description" content={siteDescription} />
+                    <meta property="og:image" content={Background} />
+
+                    {/* Twitter Card tags */}
+                    <meta name="twitter:title" content={title} />
+                    <meta name="twitter:description" content={siteDescription} />
+                    <meta name="twitter:image" content={Background} />
                 </Helmet>
                 <Banner title={siteTitle} pages={genericPages.edges} />
                 <div id="main">
@@ -53,6 +69,7 @@ export const pageQuery = graphql`
             siteMetadata {
                 title
                 description
+                siteUrl
             }
         }        
         # get all generic-page        
