@@ -34,11 +34,11 @@ _I suoi "Buoi", le sue case rischiano di diventare famosi come i pretini di Caff
 Fiorucci può molto. Quella freschezza e sicurezza di colore e di linee, quella gioia trattenuta, quasi riserbo, sono indici di una sincerità risoluta quanto schiva delle facilonerie della moda.\
 _Fabio Tombari, 1968_
 
-_"_Ti rammento Schubert di esporre nella sua galleria i disegni e gli acquarelli del giovane Fiorucci, sono essi di qualità superiore, assai rara oggidì."\
-_Giorgio De Chirico, 1973_
+_"_Ti rammento Schubert di esporre nella sua galleria i disegni e gli acquarelli del giovane Fiorucci, sono essi di qualità superiore, assai rara oggidì."_\
+__Giorgio De Chirico, 1973_
 
-_"_Deriva dalla tipica radice dei creativi, dei grandi immaginari, in quegli spazi grafici il segno incide con profondità estrema la forma, sicché questa ne diventa, per illuminazione, emblematica".\
-_Italo Calvino, 1974_
+_"_Deriva dalla tipica radice dei creativi, dei grandi immaginari, in quegli spazi grafici il segno incide con profondità estrema la forma, sicché questa ne diventa, per illuminazione, emblematica"._\
+__Italo Calvino, 1974_
 
 Quelle immagini, quei buoi sono sulla linea dell'arco mentale, e diventano idee, profondità, creazione.\
 _Paolo Volponi, 1975_
@@ -58,8 +58,8 @@ _Ivano Dionigi, 1986_
 La grande mole dell'animale grava sulla tela come sulla carta dell'opera grafica, ben al di là di portarvi però il semplice valore della sua oggettiva specificità naturale. Vi si impone piuttosto, infatti, come concettualità di massa fisica o di roccia, a volte, a richiamare o invocare quasi, una promessa di sicurezza e insieme di fiducia e si carica così di un significato archetipale, mitico, fino a diventare persona (il suo occhio talvolta è decisamente umano), madre, addirittura; oppure è calore o casa o qualunque entità che abbia il potere di accogliere e proteggere.\
 _Alberto Pierucci, 1988_
 
-_"_Fiorucci possiede in maniera eccezionale tutte le "virtù" del disegnatore… è un artista raro e discreto: ha il dono della poesia e nell'acquarello raggiunge una eccezionale intensità di dettato così che ogni suo foglio è pagina di poesia, di resistente poesia".\
-_Valerio Volpini, 1989_
+_"_Fiorucci possiede in maniera eccezionale tutte le "virtù" del disegnatore… è un artista raro e discreto: ha il dono della poesia e nell'acquarello raggiunge una eccezionale intensità di dettato così che ogni suo foglio è pagina di poesia, di resistente poesia"._\
+__Valerio Volpini, 1989_
 
 Nell'ambito europeo, oggi è considerato uno dei maggiori acquarellisti per la tecnica eccezionale, per la raffinatezza d'esecuzione e per tutto quel repertorio cromatico ed espressivo. Rari artisti hanno raggiunto quella profondità, quei tagli particolari che rendono un po’ tutta l’opera distinguibile per originalità e fantasia.\
 Il "mondo" di Fiorucci emerge per raffinatezza, e sublimazione delle forme e della natura. Sono convinto che questi acquarelli sono la più attuale proiezione della grande tradizione tecnica e sensibili a ulteriori trasformazioni e raggiungimenti, senza mai disperdere la proprietà dello stile e la profondità creativa.\
@@ -77,8 +77,8 @@ _Mario Logli, 1996_
 Al momento contemplativo di Castellani, a quello esistenzialista, espressionista di Buscaglia, a quello narrativo di Ciarrocchi, Fiorucci aggiunge il colore della memoria, tanto che i suoi luoghi sono dei punti di vista, vere e proprie ricreazioni dello spirito, slabbrati nei loro confini geografici.\
 _Silvia Cuppini, 1997_
 
-_"_E' stato bello e interessante camminare nella sua strada d'arte e con il rispetto di ieri e di oggi. Nell'acquarello hai scoperto la luce diffusa e geometrica intesa come forma. Nessuno è riuscito a tanto; sei un riferimento di stile e di scuola".\
-_Mauro Giacomelli, 1998_
+_"_E' stato bello e interessante camminare nella sua strada d'arte e con il rispetto di ieri e di oggi. Nell'acquarello hai scoperto la luce diffusa e geometrica intesa come forma. Nessuno è riuscito a tanto; sei un riferimento di stile e di scuola"._\
+__Mauro Giacomelli, 1998_
 
 Voglio comunicarti le straordinarie fascinazioni che silenziosamente i tuoi acquerelli hanno saputo trasfondermi.\
 _Bruno Ceci, 2003_
@@ -118,6 +118,7 @@ Risiede a Pesaro con studio in via Tumiati, 57 – Telefono 0721.52314 – Cellu
 
 ### Recensioni
 
-Nel 1974 mostra alla Galleria "Barbaroux" di Milano. Recensita da Valsecchi in concomitanza con mostre di Picasso e Arp come eventi dell’anno.\
+Nel 1974 su invito espone opere pittoriche e grafiche alla galleria "Barbaroux" di Milano. La stessa mostra assieme a mostre di J. Arp e Picasso viene recensita come evento dell’anno dal critico M. Valsecchi sulla rivista Derby Bazar.\
 A Senigallia per il concorso "Premio Arte Poesia" vince la medaglia d’oro come artista marchigiano dell’anno 1980.\
+Nel 2004 su invito espone una serie di acquarelli alla Chicago Gallery News.\
 Sue opere si trovano in numerose gallerie nazionali e collezioni private.
