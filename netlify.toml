@@ -9,3 +9,4 @@
   from = "https://fioruccifranco.netlify.com/*"
   to = "https://www.fioruccifranco.it/:splat"
   status = 301
+  force = true
