@@ -52,7 +52,6 @@ export class ThemePageTemplate extends Component {
     };
 
     render() {
-        console.log(this.props);
         const { photoIndex, isOpen } = this.state;
         const Lightbox = this.Lightbox;
         const images = this.props.works.map((work) => {
@@ -65,6 +64,25 @@ export class ThemePageTemplate extends Component {
 
         return (
             <div>
+                <Helmet>
+                    <title>{`${this.props.title} - ${this.props.siteTitle}`}</title>
+                    {/* General tags */}
+                    <meta name="description" content={`${this.props.title} - ${this.props.siteTitle}`} />
+                    <meta name="image" content={this.props.introImage} />
+
+                    {/* OpenGraph tags */}
+                    <meta property="og:url" content={this.props.siteUrl} />
+                    <meta property="og:type" content={'website'} />
+                    <meta property="og:title" content={`${this.props.title} - ${this.props.siteTitle}`} />
+                    <meta property="og:description" content={`${this.props.title} - ${this.props.siteTitle}`} />
+                    <meta property="og:image" content={this.props.introImage} />
+
+                    {/* Twitter Card tags */}
+                    <meta name="twitter:title" content={`${this.props.title} - ${this.props.siteTitle}`} />
+                    <meta name="twitter:description" content={`${this.props.title} - ${this.props.siteTitle}`} />
+                    <meta name="twitter:image" content={this.props.introImage} />
+                </Helmet>
+
                 <Helmet>
                     <title>{`${this.props.title} - ${this.props.siteTitle}`}</title>
                     <meta name="description" content={this.props.title} />
@@ -131,14 +149,17 @@ ThemePageTemplate.propTypes = {
     introText: PropTypes.string,
     works: PropTypes.array,
     siteTitle: PropTypes.string,
+    siteUrl: PropTypes.string,
     preview: PropTypes.bool
 };
 
 const ThemePage = ({ data: { site, themePage } }) => {
     const siteTitle = site.siteMetadata.title;
+    const siteUrl = site.siteMetadata.siteUrl + themePage.fields.slug;
     return (
         <ThemePageTemplate
           title={themePage.frontmatter.title}
+          siteUrl={siteUrl}
           subtitle={themePage.frontmatter.subtitle}
           introText={themePage.html}
           introImage={themePage.frontmatter.intro_image.childImageSharp.sizes.src}
@@ -163,12 +184,16 @@ export const pageQuery = graphql`
             siteMetadata {
                 title
                 description
+                siteUrl
             }
         }
         # get theme page
         themePage: markdownRemark(id: { eq: $id }) {
             id
-            html 
+            html
+            fields {
+                slug
+            }
             frontmatter {
                 title
                 subtitle

@@ -3,16 +3,32 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
+import Background from '../img/banner.jpg';
 
-export const GenericPageTemplate = ({ title, content, contentComponent, siteTitle, preview }) => {
+export const GenericPageTemplate = ({ title, content, contentComponent, siteTitle, siteUrl, preview }) => {
     const PageContent = contentComponent || Content;
-    siteTitle = siteTitle || '';
 
+    siteTitle = siteTitle || '';
+    siteUrl = siteUrl || '';
     return (
         <div>
             <Helmet>
                 <title>{`${title} - ${siteTitle}`}</title>
-                <meta name="description" content={title} />
+                {/* General tags */}
+                <meta name="description" content={`${title} - ${siteTitle}`} />
+                <meta name="image" content={Background} />
+
+                {/* OpenGraph tags */}
+                <meta property="og:url" content={siteUrl} />
+                <meta property="og:type" content={'website'} />
+                <meta property="og:title" content={`${title} - ${siteTitle}`} />
+                <meta property="og:description" content={`${title} - ${siteTitle}`} />
+                <meta property="og:image" content={Background} />
+
+                {/* Twitter Card tags */}
+                <meta name="twitter:title" content={`${title} - ${siteTitle}`} />
+                <meta name="twitter:description" content={`${title} - ${siteTitle}`} />
+                <meta name="twitter:image" content={Background} />
             </Helmet>
 
             <BannerLanding title={title} preview={preview} />
@@ -31,11 +47,13 @@ GenericPageTemplate.propTypes = {
     content: PropTypes.string,
     contentComponent: PropTypes.func,
     siteTitle: PropTypes.string,
+    siteUrl: PropTypes.string,
     preview: PropTypes.bool
 };
 
 const GenericPage = ({ data: { site, genericPage } }) => {
     const siteTitle = site.siteMetadata.title;
+    const siteUrl = site.siteMetadata.siteUrl + genericPage.fields.slug;
 
     return (
         <GenericPageTemplate
@@ -43,6 +61,7 @@ const GenericPage = ({ data: { site, genericPage } }) => {
           title={genericPage.frontmatter.title}
           content={genericPage.html}
           siteTitle={siteTitle}
+          siteUrl={siteUrl}
         />
     )
 };
@@ -60,11 +79,15 @@ export const genericPageQuery = graphql`
             siteMetadata {
                 title
                 description
+                siteUrl
             }
         }
         # get generic page
         genericPage: markdownRemark(id: { eq: $id }) {
-            html 
+            html
+            fields {
+                slug
+            }
             frontmatter {
                 title
             }

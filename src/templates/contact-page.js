@@ -16,7 +16,7 @@ export const ContactPageTemplate = ({
 }) => {
     siteTitle = siteTitle || '';
     siteUrl = siteUrl || '';
-    const siteDescription = "Pagina Contatti";
+    const siteDescription = "Pagina contatti - Fiorucci Franco";
     return (
         <div>
             <Helmet>
@@ -27,6 +27,7 @@ export const ContactPageTemplate = ({
 
                 {/* OpenGraph tags */}
                 <meta property="og:url" content={siteUrl} />
+                <meta property="og:type" content={'website'} />
                 <meta property="og:title" content={siteTitle} />
                 <meta property="og:description" content={siteDescription} />
                 <meta property="og:image" content={Background} />
@@ -57,7 +58,7 @@ ContactPageTemplate.propTypes = {
 };
 
 const ContactPage = ({ data: { site, contactPage } }) => {
-    const siteUrl = site.siteMetadata.siteUrl;
+    const siteUrl = site.siteMetadata.siteUrl + contactPage.fields.slug;
     const siteTitle = site.siteMetadata.title;
     return (
         <ContactPageTemplate
@@ -75,6 +76,9 @@ const ContactPage = ({ data: { site, contactPage } }) => {
 ContactPage.propTypes = {
     data: PropTypes.shape({
         markdownRemark: PropTypes.shape({
+            fields: PropTypes.shape({
+                slug: PropTypes.string
+            }),
             frontmatter: PropTypes.object,
         }),
     }),
@@ -94,6 +98,9 @@ export const contactPageQuery = graphql`
         }
         # get contact page
         contactPage: markdownRemark(id: { eq: $id }) { 
+            fields {
+                slug
+            }
             frontmatter {
                 title
                 email
