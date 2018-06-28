@@ -32,7 +32,7 @@ export const ContactPageTemplate = ({
                 <meta property="og:image" content={Background} />
 
                 {/* Twitter Card tags */}
-                <meta name="twitter:title" content={title} />
+                <meta name="twitter:title" content={siteTitle} />
                 <meta name="twitter:description" content={siteDescription} />
                 <meta name="twitter:image" content={Background} />
             </Helmet>
