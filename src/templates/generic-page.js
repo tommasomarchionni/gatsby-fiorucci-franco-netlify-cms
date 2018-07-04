@@ -15,6 +15,7 @@ export const GenericPageTemplate = ({ title, content, contentComponent, siteTitl
             <Helmet>
                 <title>{`${title} - ${siteTitle}`}</title>
                 {/* General tags */}
+                <link rel="alternate" href={siteUrl} hrefLang="it-it"/>
                 <meta name="description" content={`${title} - ${siteTitle}`} />
                 <meta name="image" content={Background} />
 

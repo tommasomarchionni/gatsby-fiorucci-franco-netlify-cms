@@ -66,7 +66,9 @@ export class ThemePageTemplate extends Component {
             <div>
                 <Helmet>
                     <title>{`${this.props.title} - ${this.props.siteTitle}`}</title>
+
                     {/* General tags */}
+                    <link rel="alternate" href={this.props.siteUrl} hrefLang="it-it"/>
                     <meta name="description" content={`${this.props.title} - ${this.props.siteTitle}`} />
                     <meta name="image" content={this.props.introImage} />
 

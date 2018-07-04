@@ -42,10 +42,12 @@ class TemplateWrapper extends React.Component {
         const { children, data: { site, contactPages, genericPages } } = this.props;
         const siteTitle = site.siteMetadata.title;
         const siteDescription = site.siteMetadata.description;
+        const siteUrl = site.siteMetadata.siteUrl;
         return (
             <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
                 <Helmet>
                     <title>{siteTitle}</title>
+                    <link rel="alternate" href={siteUrl} hrefLang="it-it"/>
                     <meta name="description" content={siteDescription} />
                 </Helmet>
                 <div id="wrapper">

@@ -12,16 +12,19 @@ export const ContactPageTemplate = ({
     address,
     siteTitle,
     siteUrl,
+    siteDescription,
     preview
 }) => {
     siteTitle = siteTitle || '';
     siteUrl = siteUrl || '';
-    const siteDescription = "Pagina contatti - Fiorucci Franco";
+    siteDescription = siteDescription || 'Pagina contatti - Fiorucci Franco';
     return (
         <div>
             <Helmet>
                 <title>{`${title} - ${siteTitle}`}</title>
+
                 {/* General tags */}
+                <link rel="alternate" href={siteUrl} hrefLang="it-it"/>
                 <meta name="description" content={siteDescription} />
                 <meta name="image" content={Background} />
 
@@ -53,6 +56,7 @@ ContactPageTemplate.propTypes = {
     telephone: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
     siteTitle: PropTypes.string,
+    siteDescription: PropTypes.string,
     siteUrl: PropTypes.string,
     preview: PropTypes.bool
 };
@@ -60,6 +64,7 @@ ContactPageTemplate.propTypes = {
 const ContactPage = ({ data: { site, contactPage } }) => {
     const siteUrl = site.siteMetadata.siteUrl + contactPage.fields.slug;
     const siteTitle = site.siteMetadata.title;
+    const siteDescription = site.siteMetadata.description;
     return (
         <ContactPageTemplate
           title={contactPage.frontmatter.title}
@@ -68,6 +73,7 @@ const ContactPage = ({ data: { site, contactPage } }) => {
           cellular={contactPage.frontmatter.cellular}
           address={contactPage.frontmatter.address}
           siteTitle={siteTitle}
+          siteDescription={siteDescription}
           siteUrl={siteUrl}
         />
     )

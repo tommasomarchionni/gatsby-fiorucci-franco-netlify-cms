@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Fiorucci Franco',
     author: 'Tommaso Marchionni',
-    description: 'Sito web di Fiorucci Franco',
+    description: 'Fiorucci Franco nasce nell\'officina della sua stessa città, con memorabili maestri del disegno e dell\'incisione quali Carnevali, Castellani, Ceci, Buscaglia, Battistoni, solo per dire di alcuni di diversa generazione, che hanno trasmesso l’arte ad uno stuolo di allievi che oggi rappresentano in prima fila italiana e che hanno dato un contenuto storico a quella che comunemente, ormai, viene definita "la scuola d’Urbino',
     siteUrl: 'https://www.fioruccifranco.it'
   },
   pathPrefix: '/',

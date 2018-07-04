@@ -14,7 +14,10 @@ export default class IndexPage extends React.Component {
         return (
             <div>
                 <Helmet>
-                    <title>{`Home - ${siteTitle}`}</title>
+                    <title>{`Pagina ufficiale di ${siteTitle}`}</title>
+
+                    <link rel="alternate" href={siteUrl} hrefLang="it-it"/>
+
                     {/* General tags */}
                     <meta name="description" content={siteDescription} />
                     <meta name="image" content={Background} />
@@ -31,7 +34,7 @@ export default class IndexPage extends React.Component {
                     <meta name="twitter:description" content={siteDescription} />
                     <meta name="twitter:image" content={Background} />
                 </Helmet>
-                <Banner title={siteTitle} pages={genericPages.edges} />
+                <Banner siteUrl={siteUrl} title={siteTitle} pages={genericPages.edges} />
                 <div id="main">
                     <section id="one" className="tiles" >
                         {themePages.edges

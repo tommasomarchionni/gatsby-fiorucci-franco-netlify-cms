@@ -4,7 +4,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Helmet from 'react-helmet'
 import BannerLanding from '../components/BannerLanding'
 
-export const ThankyouPageTemplate = ({ title, content, contentComponent, siteTitle, preview }) => {
+export const ThankyouPageTemplate = ({ title, content, contentComponent, siteTitle, siteUrl, preview }) => {
   const PageContent = contentComponent || Content;
   siteTitle = siteTitle || '';
 
@@ -12,6 +12,7 @@ export const ThankyouPageTemplate = ({ title, content, contentComponent, siteTit
       <div>
           <Helmet>
               <title>{`${title} - ${siteTitle}`}</title>
+              <link rel="alternate" href={siteUrl} hrefLang="it-it"/>
               <meta name="description" content={title} />
           </Helmet>
 
@@ -31,11 +32,13 @@ ThankyouPageTemplate.propTypes = {
     content: PropTypes.string,
     contentComponent: PropTypes.func,
     siteTitle: PropTypes.string,
+    siteUrl: PropTypes.string,
     preview: PropTypes.bool
 };
 
 const ThankyouPage = ({ data: { site, thankYouPage } }) => {
     const siteTitle = site.siteMetadata.title;
+    const siteUrl = site.siteMetadata.siteUrl;
 
     return (
         <ThankyouPageTemplate
@@ -43,6 +46,7 @@ const ThankyouPage = ({ data: { site, thankYouPage } }) => {
           title={thankYouPage.frontmatter.title}
           content={thankYouPage.html}
           siteTitle={siteTitle}
+          siteUrl={siteUrl}
         />
     )
 };
@@ -60,6 +64,7 @@ export const thankyouPageQuery = graphql`
             siteMetadata {
                 title
                 description
+                siteUrl
             }
         }
         # get thank you page
