@@ -11,7 +11,7 @@ export const ThankyouPageTemplate = ({ title, content, contentComponent, siteTit
   return (
       <div>
           <Helmet>
-              <title>{`${title} - ${siteTitle}`}</title>
+              <title>{`${siteTitle} - ${title}`}</title>
               <link rel="alternate" href={siteUrl} hrefLang="it-it"/>
               <meta name="description" content={title} />
           </Helmet>
