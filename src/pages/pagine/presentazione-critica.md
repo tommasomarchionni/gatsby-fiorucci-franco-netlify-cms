@@ -6,7 +6,7 @@ intro_image: ../../img/il-bue-e-la-sua-anima.jpg
 ---
 ## L'acquarello di Franco Fiorucci
 
-Franco Fiorucci nasce nell'officina della sua stessa città, con memorabili maestri del disegno e dell'incisione quali Carnevali, Castellani, Ceci, Buscaglia, Battistoni, solo per dire di alcuni di diversa generazione, che hanno trasmesso l’arte ad uno stuolo di allievi che oggi rappresentano in prima fila italiana e che hanno dato un contenuto storico a quella che comunemente, ormai, viene definita "la scuola d’Urbino".
+Fiorucci Franco nasce nell'officina della sua stessa città, con memorabili maestri del disegno e dell'incisione quali Carnevali, Castellani, Ceci, Buscaglia, Battistoni, solo per dire di alcuni di diversa generazione, che hanno trasmesso l’arte ad uno stuolo di allievi che oggi rappresentano in prima fila italiana e che hanno dato un contenuto storico a quella che comunemente, ormai, viene definita "la scuola d’Urbino".
 
 Il giovane Fiorucci ebbe subito il "gradimento" dei colleghi per l'originalità e la qualità del suo disegno e le capacità di incisore che si esprimevano in modo molto personali nel confronto con il paesaggio e le cose usuali del suo ambiente.
 
@@ -39,8 +39,6 @@ Edizioni L'Astrogallo, 1991
 
 Maggio 1989\
 Valerio Volpini
-
-
 
 ## Le virtù del Disegnatore
 
