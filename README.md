@@ -1,6 +1,6 @@
 # Gatsby + Netlify CMS for Fiorucci Franco
 
-This repo contains current site of Fiorucci Franco.
+This repo contains current site of [Fiorucci Franco](https://www.fioruccifranco.it).
 
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
