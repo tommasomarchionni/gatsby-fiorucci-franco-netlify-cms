@@ -21,7 +21,7 @@ export const ContactPageTemplate = ({
     return (
         <div>
             <Helmet>
-                <title>{`${title} - ${siteTitle}`}</title>
+                <title>{`${siteTitle} - ${title}`}</title>
 
                 {/* General tags */}
                 <link rel="alternate" href={siteUrl} hrefLang="it-it"/>
