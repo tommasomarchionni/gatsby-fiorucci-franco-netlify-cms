@@ -13,7 +13,7 @@ export const GenericPageTemplate = ({ title, content, contentComponent, siteTitl
     return (
         <div>
             <Helmet>
-                <title>{`${title} - ${siteTitle}`}</title>
+                <title>{`${siteTitle} - ${title}`}</title>
                 {/* General tags */}
                 <link rel="alternate" href={siteUrl} hrefLang="it-it"/>
                 <meta name="description" content={`${title} - ${siteTitle}`} />
