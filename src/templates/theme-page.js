@@ -86,7 +86,7 @@ export class ThemePageTemplate extends Component {
                 </Helmet>
 
                 <Helmet>
-                    <title>{`${this.props.title} - ${this.props.siteTitle}`}</title>
+                    <title>{`${this.props.siteTitle} - ${this.props.title}`}</title>
                     <meta name="description" content={this.props.title} />
                 </Helmet>
 
